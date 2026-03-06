@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carleton Campus Buildings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Carleton Campus Buildings</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="map.html">Campus Map</a>
+    </nav>
+</header>
+
+<section class="building-list">
+    <h2>Popular Campus Locations</h2>
+
+    <div class="building">
+        <h3>MacOdrum Library</h3>
+        <p>Main library for students. Study spaces, computers, and research resources are available.</p>
+    </div>
+
+    <div class="building">
+        <h3>University Centre</h3>
+        <p>Student hub with food services, meeting areas, and campus services.</p>
+    </div>
+
+    <div class="building">
+        <h3>Canal Building</h3>
+        <p>Contains classrooms and administrative offices.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>Carleton Map Redesign Project</p>
+</footer>
+
+</body>
+</html>
