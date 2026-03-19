@@ -1,3 +1,16 @@
+var tunnelColors = {
+    'Tunnel A': '#888888',
+    'Tunnel B': '#22CC00',
+    'Tunnel C': '#EE00AA',
+    'Tunnel D': '#FF6600',
+    'Tunnel E': '#7700CC',
+    'Tunnel F': '#FFAA00',
+    'Tunnel G': '#0077EE',
+};
+
+// Holds the GeoJSON layer once loaded so the toggle can add/remove it
+var tunnelLayer = null;
+var tunnelsVisible = true;
 // Load/Render Tunnels
 fetch('geojson-files/cu-tunnels.geojson')
     .then(function(response) {
