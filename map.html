@@ -1,27 +1,107 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Map | Carleton Map</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-          crossorigin=""/>
-    <style>
-        #map { height: 600px; width: 100%; }
-    </style>
-<body>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a class="active" href="map.html">Map</a>
-    </nav>
+    <title>Carleton Campus Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h2>Campus Map</h2>
-    <div class="map-container">
-        <div id="map"></div>
-    </div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="Scripts/TopMapOverlay.js"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.6);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00e0ff;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #map {
+            height: 600px;
+            width: 90%;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: rgba(0,0,0,0.7);
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Map</a>
+</nav>
+
+<h2>🗺️ Carleton Campus Map</h2>
+
+<div id="map"></div>
+
+<footer>
+    <p>&copy; 2026 Carleton Map Project</p>
+</footer>
+
+<!-- Leaflet JS (MUST come before map script) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    // Initialize map
+    const map = L.map('map').setView([45.3876, -75.6960], 16);
+
+    // Add tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Markers
+    L.marker([45.3876, -75.6960])
+        .addTo(map)
+        .bindPopup("📚 MacOdrum Library");
+
+    L.marker([45.3865, -75.6975])
+        .addTo(map)
+        .bindPopup("🍔 University Centre");
+
+    L.marker([45.3885, -75.6950])
+        .addTo(map)
+        .bindPopup("🏫 Canal Building");
+</script>
 
 </body>
 </html>
