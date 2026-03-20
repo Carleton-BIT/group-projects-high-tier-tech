@@ -1,19 +1,16 @@
 // Wait until the page loads
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Initialize map only once
+    // Ensure the map exists from TopMapOverlay.js
     if (!window.map) {
-        window.map = L.map('map').setView([45.3831, -75.6976], 16);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap'
-        }).addTo(map);
-        L.control.zoom({ position: 'topright' }).addTo(map);
-        L.control.scale().addTo(map);
+        console.error("Map not initialized! Make sure TopMapOverlay.js loads before Navigation.js");
+        return;
     }
 
-    // --- Building Markers ---
-    var buildingList = [];
+    var map = window.map;
+
+    // --- Routing Coordinates Dictionary ---
+    // This is ONLY used to look up the math for the dropdown menus now
     var buildingCoords = {
         "UC": [45.3831, -75.6976],
         "Steacie": [45.38281441419413, -75.69688916910961],
@@ -35,36 +32,26 @@ document.addEventListener("DOMContentLoaded", function() {
         "Architecture": [45.38401319521936, -75.69747845760243]
     };
 
-    for (let key in buildingCoords) {
-        let marker = L.marker(buildingCoords[key]).bindPopup("<b>" + key + "</b>");
-        buildingList.push(marker);
-    }
-
-    var buildingLayer = L.layerGroup(buildingList);
-    buildingLayer.addTo(map);
-    var overlays = { "Show Markers": buildingLayer };
-    L.control.layers(null, overlays).addTo(map);
-
     // --- Navigation & Routing ---
 
-    // 1. Initialize routing control with ALTERNATIVES enabled
+    // Initialize routing control with ALTERNATIVES enabled
     var routingControl = L.Routing.control({
         waypoints: [],
         routeWhileDragging: false,
         addWaypoints: false,
         fitSelectedRoutes: true,
-        showAlternatives: true, // NEW: Tells the engine to find multiple paths
+        showAlternatives: true,
         altLineOptions: {
             styles: [
-                {color: '#141e30', opacity: 0.4, weight: 6} // Style for the non-selected alternative routes
+                {color: '#141e30', opacity: 0.4, weight: 6}
             ]
         },
         lineOptions: {
-            styles: [{color: '#00e0ff', opacity: 0.9, weight: 6}] // Main selected route color
+            styles: [{color: '#00e0ff', opacity: 0.9, weight: 6}]
         }
     }).addTo(map);
 
-    // 2. Go to UC Button
+    // Go to UC Button
     const ucButton = document.getElementById("gotoUC");
     if (ucButton) {
         ucButton.onclick = () => {
@@ -72,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     }
 
-    // 3. Routing Logic
+    // Routing Logic
     const startSelect = document.getElementById("startSelect");
     const endSelect = document.getElementById("endSelect");
     const routeBtn = document.getElementById("routeBtn");
-    const resetBtn = document.getElementById("resetBtn"); // Grab the new reset button
+    const resetBtn = document.getElementById("resetBtn");
 
     // Get Directions Action
     if (routeBtn) {
@@ -92,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
             var startCoords = buildingCoords[startVal];
             var endCoords = buildingCoords[endVal];
 
-            // FIX: Changed 'mapbox/walking' to the standard OSRM 'foot' profile
             routingControl.getRouter().options.profile = 'foot';
 
             routingControl.setWaypoints([
@@ -102,17 +88,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // NEW: Reset Action
+    // Reset Action
     if (resetBtn) {
         resetBtn.addEventListener("click", function() {
-            // 1. Clear the route lines from the map
             routingControl.setWaypoints([]);
-
-            // 2. Reset the dropdown menus back to default
             startSelect.value = "";
             endSelect.value = "";
-
-            // 3. Re-center the map back to the main campus view
             map.setView([45.3831, -75.6976], 16);
         });
     }
