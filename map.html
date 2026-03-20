@@ -4,31 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <title>Map | Carleton Map</title>
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: #00e0ff;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .active {
+            color: #00e0ff;
+        }
+
+        /* TITLE */
+        h2 {
+            text-align: center;
+            margin: 25px 0;
+            font-size: 2rem;
+        }
+
+        /* MAP CONTAINER */
+        .map-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+
+        /* Styles for the navigation controls */
+        .controls-container {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center; /* Ensures "TO" text aligns with boxes */
+        }
+
+        .map-btn, .map-select {
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: 0.2s;
+        }
+
+        .map-btn {
+            background: #00e0ff;
+            color: #141e30;
+        }
+
+        .map-btn:hover {
+            background: #00b8d4;
+        }
+
+        .map-select {
+            background: #ffffff;
+            color: #141e30;
+            min-width: 200px; /* Made slightly smaller so both fit nicely */
+        }
+
+        /* NEW: Hides the default ugly routing instruction box */
+        .leaflet-routing-container {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
 
 <nav>
-    <!-- FIXED HOME LINK -->
-    <a href="index.html">Home</a>
-    <a class="active" href="map.html">Map</a>
+    <a href="./index.html">Home</a>
+    <a class="active" href="#">Map</a>
 </nav>
 
 <h2>🗺️ Campus Map</h2>
+
+<div class="controls-container">
+    <button id="gotoUC" class="map-btn">
+        Go to University Centre
+    </button>
+
+    <select id="startSelect" class="map-select">
+        <option value="" selected disabled>Start Building...</option>
+        <option value="UC">University Centre</option>
+        <option value="Steacie">Steacie Building</option>
+        <option value="Health Science">Health Science Building</option>
+        <option value="Herzberg">Herzberg Laboratory</option>
+        <option value="Richcraft">Richcraft Building</option>
+        <option value="Paterson">Paterson Hall</option>
+        <option value="Southam">Southam Hall</option>
+        <option value="Mackenzie">Mackenzie Building</option>
+        <option value="Minto">Minto Centre</option>
+        <option value="Field House">Field House</option>
+        <option value="Alumni">Alumni Hall</option>
+        <option value="Nicol">Nicol Building</option>
+        <option value="Tory">Canal/Tory Building</option>
+        <option value="Azireli Pavilion">Azireli Pavilion</option>
+        <option value="Azireli Theatre">Azireli Theatre</option>
+        <option value="MacOdrum">MacOdrum Library</option>
+        <option value="Ice House">Carleton Ice House</option>
+        <option value="Architecture">Architecture Building</option>
+    </select>
+
+    <span style="font-weight: bold; font-size: 1.1rem;">TO</span>
+
+    <select id="endSelect" class="map-select">
+        <option value="" selected disabled>Destination...</option>
+        <option value="UC">University Centre</option>
+        <option value="Steacie">Steacie Building</option>
+        <option value="Health Science">Health Science Building</option>
+        <option value="Herzberg">Herzberg Laboratory</option>
+        <option value="Richcraft">Richcraft Building</option>
+        <option value="Paterson">Paterson Hall</option>
+        <option value="Southam">Southam Hall</option>
+        <option value="Mackenzie">Mackenzie Building</option>
+        <option value="Minto">Minto Centre</option>
+        <option value="Field House">Field House</option>
+        <option value="Alumni">Alumni Hall</option>
+        <option value="Nicol">Nicol Building</option>
+        <option value="Tory">Canal/Tory Building</option>
+        <option value="Azireli Pavilion">Azireli Pavilion</option>
+        <option value="Azireli Theatre">Azireli Theatre</option>
+        <option value="MacOdrum">MacOdrum Library</option>
+        <option value="Ice House">Carleton Ice House</option>
+        <option value="Architecture">Architecture Building</option>
+    </select>
+
+    <button id="routeBtn" class="map-btn" style="background: #BF112B; color: white;">Get Directions</button>
+
+    <button id="resetBtn" class="map-btn" style="background: #1a1a1a; color: white;">Reset</button>
+</div>
 
 <div class="map-container">
     <div id="map"></div>
 </div>
 
-<!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-<!-- Your existing script (UNCHANGED) -->
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
 <script src="Scripts/TopMapOverlay.js"></script>
 <script src="Scripts/Tunnels.js"></script>
+<script src="Scripts/Navigation.js"></script>
+<script src="Scripts/BuildingOverlay.js"></script>
 
 </body>
 </html>
-
