@@ -1,15 +1,3 @@
-var landmarkIcons = {
-    'parking':      { file: 'webpage-assets/parking-1.svg',  color: '#FFAA00', label: 'Parking'       },
-    'bus_stop':     { file: 'webpage-assets/bus-33.svg',      color: '#0077EE', label: 'Bus Stop'      },
-    'bus_station':  { file: 'webpage-assets/bus-33.svg',      color: '#0077EE', label: 'Bus Station'   },
-    'cafe':         { file: 'webpage-assets/coffee-23.svg',   color: '#7B4F2E', label: 'Café'          },
-    'restaurant':   { file: 'webpage-assets/food-8.svg',      color: '#BF112B', label: 'Restaurant'    },
-    'fast_food':    { file: 'webpage-assets/food-8.svg',      color: '#BF112B', label: 'Fast Food'     },
-    'food_court':   { file: 'webpage-assets/food-8.svg',      color: '#BF112B', label: 'Food Court'    },
-    'library':      { file: 'webpage-assets/book-195.svg',    color: '#444444', label: 'Library'       },
-    'station':      { file: 'webpage-assets/train-20.svg',    color: '#6B21A8', label: 'Train Station' },
-};
-
 // Holds the GeoJSON layer once loaded so the toggle can add/remove it
 var landmarkLayer = null;
 var landmarksVisible = true;
