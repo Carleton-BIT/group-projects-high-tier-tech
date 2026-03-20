@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #1a1a1a;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: #1a1a1a;
+    border-bottom: 3px solid #BF112B;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+nav a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #BF112B;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.active {
+    color: #BF112B;
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 2rem;
+    color: #1a1a1a;
+}
+
+/* MAP CONTAINER */
+.map-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border: 1px solid #cccccc;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+/* CONTROLS */
+.controls-container {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.map-btn, .map-select {
+    padding: 10px 18px;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.2s, transform 0.2s;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.map-btn {
+    background: #BF112B;
+    color: #ffffff;
+}
+
+.map-btn:hover {
+    background: #9e0e24;
+    transform: scale(1.03);
+}
+
+.map-select {
+    background: #ffffff;
+    color: #1a1a1a;
+    min-width: 200px;
+    border: 1px solid #cccccc;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.map-select:focus {
+    outline: 2px solid #BF112B;
+}
+
+/* Hide default Leaflet routing instruction box */
+.leaflet-routing-container {
+    display: none !important;
+}
