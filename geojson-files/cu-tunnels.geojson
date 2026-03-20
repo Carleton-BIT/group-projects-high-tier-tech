@@ -1,0 +1,1039 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-18T16:09:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/10583763",
+        "electrified": "no",
+        "gauge": "1435",
+        "layer": "-1",
+        "maxspeed": "80",
+        "name": "Trillium Line",
+        "name:fr": "Ligne Trillium",
+        "opening_date": "2024-11",
+        "operator": "OC Transpo",
+        "operator:wikidata": "Q3347525",
+        "operator:wikipedia": "en:OC Transpo",
+        "railway": "light_rail",
+        "tunnel": "yes",
+        "usage": "branch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.7007244,
+            45.3914344
+          ],
+          [
+            -75.7026064,
+            45.3921292
+          ],
+          [
+            -75.7028943,
+            45.3922331
+          ],
+          [
+            -75.7031124,
+            45.3923054
+          ],
+          [
+            -75.7043666,
+            45.3927367
+          ],
+          [
+            -75.7045333,
+            45.3928002
+          ],
+          [
+            -75.7047061,
+            45.3928767
+          ],
+          [
+            -75.7050334,
+            45.3930298
+          ],
+          [
+            -75.7053358,
+            45.3931873
+          ],
+          [
+            -75.7055337,
+            45.3932941
+          ],
+          [
+            -75.7057295,
+            45.3934173
+          ]
+        ]
+      },
+      "id": "way/10583763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/29570197",
+        "bicycle": "yes",
+        "highway": "cycleway",
+        "layer": "-1",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "width": "2",
+        "winter_service": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6960735,
+            45.3848228
+          ],
+          [
+            -75.6959056,
+            45.3848169
+          ]
+        ]
+      },
+      "id": "way/29570197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/264387278",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "30",
+        "name": "University Drive",
+        "name:en": "University Drive",
+        "name:fr": "promenade University",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tunnel": "building_passage"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6964357,
+            45.38216
+          ],
+          [
+            -75.6959728,
+            45.3823898
+          ]
+        ]
+      },
+      "id": "way/264387278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/496131162",
+        "electrified": "no",
+        "gauge": "1435",
+        "layer": "-1",
+        "maxspeed": "80",
+        "name": "Trillium Line",
+        "name:fr": "Ligne Trillium",
+        "opening_date": "2024-11",
+        "operator": "OC Transpo",
+        "operator:wikidata": "Q3347525",
+        "operator:wikipedia": "en:OC Transpo",
+        "railway": "light_rail",
+        "tunnel": "building_passage",
+        "usage": "branch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6967656,
+            45.3890098
+          ],
+          [
+            -75.697099,
+            45.3893883
+          ],
+          [
+            -75.697459,
+            45.3897562
+          ]
+        ]
+      },
+      "id": "way/496131162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/496132980",
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "concrete",
+        "tunnel": "building_passage",
+        "width": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6936822,
+            45.3859398
+          ],
+          [
+            -75.6936375,
+            45.3859565
+          ]
+        ]
+      },
+      "id": "way/496132980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/714072881",
+        "electrified": "no",
+        "gauge": "1435",
+        "layer": "-1",
+        "maxspeed": "80",
+        "name": "Trillium Line",
+        "name:fr": "Ligne Trillium",
+        "opening_date": "2024-11",
+        "operator": "OC Transpo",
+        "operator:wikidata": "Q3347525",
+        "operator:wikipedia": "en:OC Transpo",
+        "railway": "light_rail",
+        "tunnel": "yes",
+        "usage": "branch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6992823,
+            45.3908869
+          ],
+          [
+            -75.699663,
+            45.3910386
+          ],
+          [
+            -75.6998526,
+            45.3911126
+          ],
+          [
+            -75.7007244,
+            45.3914344
+          ]
+        ]
+      },
+      "id": "way/714072881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/729960764",
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "path",
+        "layer": "-1",
+        "name": "Campus Walkway",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wheelchair": "yes",
+        "width": "3",
+        "winter_service": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6955615,
+            45.3827975
+          ],
+          [
+            -75.6954709,
+            45.3828343
+          ]
+        ]
+      },
+      "id": "way/729960764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228359200",
+        "bicycle": "no",
+        "highway": "footway",
+        "horse": "no",
+        "layer": "-1",
+        "motor_vehicle": "no",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6973072,
+            45.3875323
+          ],
+          [
+            -75.6978681,
+            45.3875268
+          ],
+          [
+            -75.6980697,
+            45.3875266
+          ]
+        ]
+      },
+      "id": "way/1228359200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228359201",
+        "description": "Tunnel segment reference (to be adjusted",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6983387,
+            45.3859683
+          ],
+          [
+            -75.6982781,
+            45.3859677
+          ],
+          [
+            -75.6977527,
+            45.3859648
+          ]
+        ]
+      },
+      "id": "way/1228359201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228359202",
+        "bicycle": "no",
+        "description": "Tunnel segment reference point (To be adjusted)",
+        "highway": "footway",
+        "horse": "no",
+        "layer": "-1",
+        "motor_vehicle": "no",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6974881,
+            45.3869254
+          ],
+          [
+            -75.6978347,
+            45.3869225
+          ]
+        ]
+      },
+      "id": "way/1228359202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526625",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6978681,
+            45.3875268
+          ],
+          [
+            -75.697928,
+            45.3879671
+          ],
+          [
+            -75.6984959,
+            45.388034
+          ]
+        ]
+      },
+      "id": "way/1228526625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526626",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6978681,
+            45.3875268
+          ],
+          [
+            -75.6978347,
+            45.3869225
+          ],
+          [
+            -75.6978337,
+            45.3868267
+          ],
+          [
+            -75.6978289,
+            45.3863832
+          ],
+          [
+            -75.6977527,
+            45.3859648
+          ]
+        ]
+      },
+      "id": "way/1228526626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526627",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6975118,
+            45.3863824
+          ],
+          [
+            -75.6978289,
+            45.3863832
+          ]
+        ]
+      },
+      "id": "way/1228526627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526628",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6977527,
+            45.3859648
+          ],
+          [
+            -75.6972465,
+            45.3851957
+          ],
+          [
+            -75.6971805,
+            45.3850833
+          ],
+          [
+            -75.6968303,
+            45.3845146
+          ]
+        ]
+      },
+      "id": "way/1228526628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526629",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6977527,
+            45.3859648
+          ],
+          [
+            -75.6975053,
+            45.3859619
+          ]
+        ]
+      },
+      "id": "way/1228526629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526630",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6975053,
+            45.3859619
+          ],
+          [
+            -75.6975006,
+            45.3860986
+          ]
+        ]
+      },
+      "id": "way/1228526630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526631",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6982781,
+            45.3859677
+          ],
+          [
+            -75.6982807,
+            45.3858815
+          ]
+        ]
+      },
+      "id": "way/1228526631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526632",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6975053,
+            45.3859619
+          ],
+          [
+            -75.6975059,
+            45.3858925
+          ]
+        ]
+      },
+      "id": "way/1228526632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1228526633",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.697651,
+            45.3848932
+          ],
+          [
+            -75.6971805,
+            45.3850833
+          ],
+          [
+            -75.6968902,
+            45.3852197
+          ]
+        ]
+      },
+      "id": "way/1228526633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1292695275",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "layer": "-1",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6964701,
+            45.3821951
+          ],
+          [
+            -75.6960068,
+            45.3824247
+          ]
+        ]
+      },
+      "id": "way/1292695275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1292695278",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "layer": "-1",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6959416,
+            45.3823586
+          ],
+          [
+            -75.6964159,
+            45.382135
+          ]
+        ]
+      },
+      "id": "way/1292695278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1320191523",
+        "highway": "path",
+        "layer": "-1",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.697928,
+            45.3879671
+          ],
+          [
+            -75.6977581,
+            45.3882011
+          ]
+        ]
+      },
+      "id": "way/1320191523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365807",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel F",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6991037,
+            45.3810607
+          ],
+          [
+            -75.6993847,
+            45.3813288
+          ],
+          [
+            -75.6996392,
+            45.3816006
+          ],
+          [
+            -75.6990075,
+            45.3819184
+          ],
+          [
+            -75.6988175,
+            45.382014
+          ],
+          [
+            -75.6981442,
+            45.3823677
+          ],
+          [
+            -75.6983986,
+            45.3825911
+          ],
+          [
+            -75.6985838,
+            45.3828032
+          ]
+        ]
+      },
+      "id": "way/1443365807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365808",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel G",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6991037,
+            45.3810607
+          ],
+          [
+            -75.698109,
+            45.3815133
+          ],
+          [
+            -75.6979964,
+            45.3822289
+          ],
+          [
+            -75.6979922,
+            45.3822554
+          ],
+          [
+            -75.6972693,
+            45.3826265
+          ]
+        ]
+      },
+      "id": "way/1443365808"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365809",
+        "highway": "footway",
+        "layer": "-1",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6979964,
+            45.3822289
+          ],
+          [
+            -75.6981442,
+            45.3823677
+          ]
+        ]
+      },
+      "id": "way/1443365809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365810",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel E",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6990075,
+            45.3819184
+          ],
+          [
+            -75.6994565,
+            45.382374
+          ],
+          [
+            -75.6985838,
+            45.3828032
+          ]
+        ]
+      },
+      "id": "way/1443365810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365811",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel D",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6965934,
+            45.3825924
+          ],
+          [
+            -75.6969437,
+            45.3824142
+          ],
+          [
+            -75.6970209,
+            45.3823799
+          ],
+          [
+            -75.6972813,
+            45.3822272
+          ]
+        ]
+      },
+      "id": "way/1443365811"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365812",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel D",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6970209,
+            45.3823799
+          ],
+          [
+            -75.6972693,
+            45.3826265
+          ],
+          [
+            -75.6980292,
+            45.3829645
+          ],
+          [
+            -75.6983663,
+            45.3833584
+          ]
+        ]
+      },
+      "id": "way/1443365812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365813",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel C",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6945316,
+            45.3832203
+          ],
+          [
+            -75.6946469,
+            45.3834089
+          ],
+          [
+            -75.6941653,
+            45.3835444
+          ],
+          [
+            -75.6941468,
+            45.3839039
+          ],
+          [
+            -75.6939459,
+            45.3839516
+          ],
+          [
+            -75.6935546,
+            45.3840444
+          ]
+        ]
+      },
+      "id": "way/1443365813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365814",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel C",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6939459,
+            45.3839516
+          ],
+          [
+            -75.6942061,
+            45.384357
+          ],
+          [
+            -75.6944631,
+            45.3847935
+          ],
+          [
+            -75.6947505,
+            45.3857018
+          ],
+          [
+            -75.6948097,
+            45.3858888
+          ],
+          [
+            -75.6946065,
+            45.385956
+          ],
+          [
+            -75.693752,
+            45.3860483
+          ]
+        ]
+      },
+      "id": "way/1443365814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1443365815",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel A",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6944631,
+            45.3847935
+          ],
+          [
+            -75.6956496,
+            45.3844579
+          ],
+          [
+            -75.6968303,
+            45.3845146
+          ],
+          [
+            -75.6978789,
+            45.3839825
+          ],
+          [
+            -75.6985452,
+            45.3836045
+          ],
+          [
+            -75.6983663,
+            45.3833584
+          ],
+          [
+            -75.6988762,
+            45.3831122
+          ],
+          [
+            -75.6985838,
+            45.3828032
+          ]
+        ]
+      },
+      "id": "way/1443365815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1463056495",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "Tunnel B",
+        "surface": "concrete",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.6978347,
+            45.3869225
+          ],
+          [
+            -75.6985261,
+            45.3869112
+          ]
+        ]
+      },
+      "id": "way/1463056495"
+    }
+  ]
+}

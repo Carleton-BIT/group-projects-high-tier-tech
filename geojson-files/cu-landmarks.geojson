@@ -1,0 +1,2442 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-19T05:51:50Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24762965",
+        "amenity": "parking",
+        "name": "P4",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6955875,
+              45.3855515
+            ],
+            [
+              -75.6956804,
+              45.3855549
+            ],
+            [
+              -75.6957193,
+              45.3851188
+            ],
+            [
+              -75.6956308,
+              45.3851025
+            ],
+            [
+              -75.695615,
+              45.385069
+            ],
+            [
+              -75.6954882,
+              45.3850879
+            ],
+            [
+              -75.6950042,
+              45.38516
+            ],
+            [
+              -75.6950253,
+              45.3852102
+            ],
+            [
+              -75.6949442,
+              45.3852295
+            ],
+            [
+              -75.6951344,
+              45.3855485
+            ],
+            [
+              -75.6952061,
+              45.3855325
+            ],
+            [
+              -75.6952713,
+              45.3856079
+            ],
+            [
+              -75.6952979,
+              45.3856801
+            ],
+            [
+              -75.6956073,
+              45.3856426
+            ],
+            [
+              -75.6955875,
+              45.3855515
+            ]
+          ]
+        ]
+      },
+      "id": "way/24762965"
+    },
+{
+  "type": "Feature",
+  "properties": {
+    "amenity": "station",
+    "name": "Carleton O-Train Station"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-75.69592483147918, 45.385592568704055]
+  }
+},
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24762968",
+        "amenity": "parking",
+        "name": "P3",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6932565,
+              45.3850997
+            ],
+            [
+              -75.6929121,
+              45.3845228
+            ],
+            [
+              -75.6928375,
+              45.3845448
+            ],
+            [
+              -75.6928142,
+              45.3845056
+            ],
+            [
+              -75.6920505,
+              45.3847305
+            ],
+            [
+              -75.692237,
+              45.3850429
+            ],
+            [
+              -75.6923235,
+              45.3850174
+            ],
+            [
+              -75.6923511,
+              45.3850637
+            ],
+            [
+              -75.6921825,
+              45.3851134
+            ],
+            [
+              -75.6922683,
+              45.385257
+            ],
+            [
+              -75.6930946,
+              45.3850137
+            ],
+            [
+              -75.6931625,
+              45.3851274
+            ],
+            [
+              -75.6932565,
+              45.3850997
+            ]
+          ]
+        ]
+      },
+      "id": "way/24762968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24762970",
+        "amenity": "parking",
+        "name": "P11",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6943058,
+              45.3849836
+            ],
+            [
+              -75.6941504,
+              45.3847312
+            ],
+            [
+              -75.6938711,
+              45.3848144
+            ],
+            [
+              -75.6938876,
+              45.3848553
+            ],
+            [
+              -75.6936305,
+              45.384928
+            ],
+            [
+              -75.6935594,
+              45.384981
+            ],
+            [
+              -75.6935923,
+              45.3850129
+            ],
+            [
+              -75.6935232,
+              45.3850397
+            ],
+            [
+              -75.69362,
+              45.3851818
+            ],
+            [
+              -75.6936863,
+              45.3851663
+            ],
+            [
+              -75.6937128,
+              45.3852129
+            ],
+            [
+              -75.6943012,
+              45.385039
+            ],
+            [
+              -75.694274,
+              45.3849934
+            ],
+            [
+              -75.6943058,
+              45.3849836
+            ]
+          ]
+        ]
+      },
+      "id": "way/24762970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24762985",
+        "amenity": "parking",
+        "name": "P5",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6936848,
+              45.3877319
+            ],
+            [
+              -75.6942241,
+              45.3875915
+            ],
+            [
+              -75.6941941,
+              45.3875541
+            ],
+            [
+              -75.6941784,
+              45.3875151
+            ],
+            [
+              -75.6941758,
+              45.3874964
+            ],
+            [
+              -75.6941868,
+              45.3874811
+            ],
+            [
+              -75.6942229,
+              45.3874687
+            ],
+            [
+              -75.6938881,
+              45.3868864
+            ],
+            [
+              -75.6938046,
+              45.3869134
+            ],
+            [
+              -75.6937653,
+              45.3868524
+            ],
+            [
+              -75.6929264,
+              45.3870995
+            ],
+            [
+              -75.6928195,
+              45.3869668
+            ],
+            [
+              -75.6928483,
+              45.3869428
+            ],
+            [
+              -75.6926814,
+              45.3867078
+            ],
+            [
+              -75.6925438,
+              45.3867583
+            ],
+            [
+              -75.6924898,
+              45.3867018
+            ],
+            [
+              -75.6920708,
+              45.386877
+            ],
+            [
+              -75.692109,
+              45.3869173
+            ],
+            [
+              -75.6919047,
+              45.3870007
+            ],
+            [
+              -75.6927343,
+              45.3880149
+            ],
+            [
+              -75.693388,
+              45.3877237
+            ],
+            [
+              -75.6935449,
+              45.3876742
+            ],
+            [
+              -75.6936848,
+              45.3877319
+            ]
+          ]
+        ]
+      },
+      "id": "way/24762985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24762987",
+        "amenity": "parking",
+        "fee": "yes",
+        "name": "P7",
+        "parking": "surface",
+        "source": "Yahoo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6978681,
+              45.3907953
+            ],
+            [
+              -75.6971029,
+              45.3900809
+            ],
+            [
+              -75.6964073,
+              45.3893494
+            ],
+            [
+              -75.6952306,
+              45.389892
+            ],
+            [
+              -75.6959258,
+              45.3906254
+            ],
+            [
+              -75.6954384,
+              45.3908497
+            ],
+            [
+              -75.6960138,
+              45.392031
+            ],
+            [
+              -75.6960657,
+              45.39211
+            ],
+            [
+              -75.696127,
+              45.3921661
+            ],
+            [
+              -75.6962501,
+              45.3922504
+            ],
+            [
+              -75.6963814,
+              45.3923006
+            ],
+            [
+              -75.696579,
+              45.392338
+            ],
+            [
+              -75.6967871,
+              45.3923328
+            ],
+            [
+              -75.6969269,
+              45.3922997
+            ],
+            [
+              -75.6970275,
+              45.3922621
+            ],
+            [
+              -75.6975135,
+              45.3920441
+            ],
+            [
+              -75.696814,
+              45.3912667
+            ],
+            [
+              -75.6978681,
+              45.3907953
+            ]
+          ]
+        ]
+      },
+      "id": "way/24762987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24762988",
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "name": "P6",
+        "parking": "surface",
+        "source": "Yahoo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6996652,
+              45.3904105
+            ],
+            [
+              -75.6996772,
+              45.3903716
+            ],
+            [
+              -75.6996461,
+              45.3894594
+            ],
+            [
+              -75.6991089,
+              45.3890608
+            ],
+            [
+              -75.6988626,
+              45.388876
+            ],
+            [
+              -75.6988094,
+              45.3888277
+            ],
+            [
+              -75.6986435,
+              45.3886004
+            ],
+            [
+              -75.698496,
+              45.3883845
+            ],
+            [
+              -75.6984339,
+              45.3884067
+            ],
+            [
+              -75.6983885,
+              45.388362
+            ],
+            [
+              -75.6980787,
+              45.3884775
+            ],
+            [
+              -75.6983656,
+              45.3888455
+            ],
+            [
+              -75.6984453,
+              45.3889308
+            ],
+            [
+              -75.6978266,
+              45.3893219
+            ],
+            [
+              -75.6977246,
+              45.3893846
+            ],
+            [
+              -75.6980803,
+              45.3897558
+            ],
+            [
+              -75.6982911,
+              45.3899337
+            ],
+            [
+              -75.6987869,
+              45.3903094
+            ],
+            [
+              -75.6989613,
+              45.3904112
+            ],
+            [
+              -75.6994171,
+              45.3906098
+            ],
+            [
+              -75.6996293,
+              45.3904445
+            ],
+            [
+              -75.6996652,
+              45.3904105
+            ]
+          ]
+        ]
+      },
+      "id": "way/24762988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24762996",
+        "access": "permissive",
+        "amenity": "parking",
+        "fee": "yes",
+        "name": "P1",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.7008339,
+              45.3803569
+            ],
+            [
+              -75.7006791,
+              45.3803751
+            ],
+            [
+              -75.7006925,
+              45.3804283
+            ],
+            [
+              -75.7006831,
+              45.3804424
+            ],
+            [
+              -75.7006496,
+              45.3804693
+            ],
+            [
+              -75.7006389,
+              45.3804688
+            ],
+            [
+              -75.7006302,
+              45.3805437
+            ],
+            [
+              -75.7003139,
+              45.380729
+            ],
+            [
+              -75.6999975,
+              45.3809142
+            ],
+            [
+              -75.6997977,
+              45.3810165
+            ],
+            [
+              -75.7000707,
+              45.3812897
+            ],
+            [
+              -75.7001458,
+              45.3812494
+            ],
+            [
+              -75.7002992,
+              45.3811824
+            ],
+            [
+              -75.7003175,
+              45.3811711
+            ],
+            [
+              -75.7006308,
+              45.3812422
+            ],
+            [
+              -75.7006979,
+              45.3811414
+            ],
+            [
+              -75.700783,
+              45.3809468
+            ],
+            [
+              -75.7008032,
+              45.3808677
+            ],
+            [
+              -75.7008293,
+              45.380766
+            ],
+            [
+              -75.7008488,
+              45.3806313
+            ],
+            [
+              -75.7008514,
+              45.3804382
+            ],
+            [
+              -75.7008339,
+              45.3803569
+            ]
+          ]
+        ]
+      },
+      "id": "way/24762996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/89181634",
+        "amenity": "parking",
+        "name": "P15",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6939037,
+              45.3857371
+            ],
+            [
+              -75.6937213,
+              45.3854186
+            ],
+            [
+              -75.6935715,
+              45.3854602
+            ],
+            [
+              -75.6937563,
+              45.3857771
+            ],
+            [
+              -75.6939037,
+              45.3857371
+            ]
+          ]
+        ]
+      },
+      "id": "way/89181634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/89181635",
+        "amenity": "parking",
+        "name": "P12",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6952677,
+              45.3868998
+            ],
+            [
+              -75.6952208,
+              45.3868229
+            ],
+            [
+              -75.6949651,
+              45.3864041
+            ],
+            [
+              -75.6947503,
+              45.3864678
+            ],
+            [
+              -75.6951306,
+              45.3870953
+            ],
+            [
+              -75.6951786,
+              45.3870788
+            ],
+            [
+              -75.6951995,
+              45.3870795
+            ],
+            [
+              -75.6952112,
+              45.3870905
+            ],
+            [
+              -75.695244,
+              45.3870798
+            ],
+            [
+              -75.6951566,
+              45.3869312
+            ],
+            [
+              -75.6952677,
+              45.3868998
+            ]
+          ]
+        ]
+      },
+      "id": "way/89181635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/130330990",
+        "amenity": "parking",
+        "name": "P14",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6904993,
+              45.3847227
+            ],
+            [
+              -75.6911377,
+              45.3846388
+            ],
+            [
+              -75.692051,
+              45.3845032
+            ],
+            [
+              -75.692228,
+              45.3844514
+            ],
+            [
+              -75.6921838,
+              45.3843845
+            ],
+            [
+              -75.6920121,
+              45.3844222
+            ],
+            [
+              -75.691772,
+              45.3844589
+            ],
+            [
+              -75.6917492,
+              45.384393
+            ],
+            [
+              -75.6904484,
+              45.3845738
+            ],
+            [
+              -75.6904726,
+              45.3846445
+            ],
+            [
+              -75.6904993,
+              45.3847227
+            ]
+          ]
+        ]
+      },
+      "id": "way/130330990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/130331183",
+        "amenity": "parking",
+        "name": "P10",
+        "parking": "surface",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6934044,
+              45.3850533
+            ],
+            [
+              -75.6931131,
+              45.3845543
+            ],
+            [
+              -75.6930164,
+              45.3845821
+            ],
+            [
+              -75.6933077,
+              45.3850811
+            ],
+            [
+              -75.6934044,
+              45.3850533
+            ]
+          ]
+        ]
+      },
+      "id": "way/130331183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/242714236",
+        "amenity": "parking",
+        "parking": "surface",
+        "source": "Bing;local knowledge;aerial imagery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6986404,
+              45.3851537
+            ],
+            [
+              -75.6986305,
+              45.3851452
+            ],
+            [
+              -75.6985353,
+              45.3850636
+            ],
+            [
+              -75.6983532,
+              45.3851509
+            ],
+            [
+              -75.6984866,
+              45.3852919
+            ],
+            [
+              -75.6985668,
+              45.3852498
+            ],
+            [
+              -75.6985799,
+              45.3852491
+            ],
+            [
+              -75.698595,
+              45.3852502
+            ],
+            [
+              -75.6986368,
+              45.3851848
+            ],
+            [
+              -75.6986178,
+              45.3851803
+            ],
+            [
+              -75.6986134,
+              45.3851757
+            ],
+            [
+              -75.6986137,
+              45.3851715
+            ],
+            [
+              -75.6986174,
+              45.3851676
+            ],
+            [
+              -75.6986404,
+              45.3851537
+            ]
+          ]
+        ]
+      },
+      "id": "way/242714236"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/304600711",
+        "access": "private",
+        "amenity": "parking",
+        "orientation": "perpendicular",
+        "parking": "street_side"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6989059,
+              45.3866665
+            ],
+            [
+              -75.6989098,
+              45.3864658
+            ],
+            [
+              -75.6989264,
+              45.3864018
+            ],
+            [
+              -75.6989542,
+              45.3863198
+            ],
+            [
+              -75.6988915,
+              45.3863087
+            ],
+            [
+              -75.6988482,
+              45.3864581
+            ],
+            [
+              -75.6988482,
+              45.3866668
+            ],
+            [
+              -75.6989059,
+              45.3866665
+            ]
+          ]
+        ]
+      },
+      "id": "way/304600711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/377805262",
+        "amenity": "parking",
+        "name": "P8",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6995028,
+              45.3805329
+            ],
+            [
+              -75.6994451,
+              45.3804688
+            ],
+            [
+              -75.699374,
+              45.3803897
+            ],
+            [
+              -75.6991807,
+              45.3804932
+            ],
+            [
+              -75.6991487,
+              45.3805103
+            ],
+            [
+              -75.6992775,
+              45.3806384
+            ],
+            [
+              -75.6995028,
+              45.3805329
+            ]
+          ]
+        ]
+      },
+      "id": "way/377805262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/416631401",
+        "addr:housenumber": "1125",
+        "addr:postcode": "K1S 4J2",
+        "addr:street": "Colonel By Drive",
+        "amenity": "parking",
+        "building": "yes",
+        "building:levels": "3",
+        "mapillary": "368163794619127",
+        "name": "Parking Garage (P18)",
+        "operator": "Carleton University",
+        "parking": "multi-storey",
+        "source": "City of Ottawa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6970596,
+              45.3899421
+            ],
+            [
+              -75.69737,
+              45.3897958
+            ],
+            [
+              -75.697459,
+              45.3897562
+            ],
+            [
+              -75.6975503,
+              45.3897145
+            ],
+            [
+              -75.6978516,
+              45.3895735
+            ],
+            [
+              -75.697796,
+              45.3895146
+            ],
+            [
+              -75.6977721,
+              45.3895257
+            ],
+            [
+              -75.6974139,
+              45.3891461
+            ],
+            [
+              -75.6971302,
+              45.3888454
+            ],
+            [
+              -75.6971515,
+              45.3888355
+            ],
+            [
+              -75.697088,
+              45.3887683
+            ],
+            [
+              -75.6968954,
+              45.388858
+            ],
+            [
+              -75.6969556,
+              45.3889218
+            ],
+            [
+              -75.6968974,
+              45.3889489
+            ],
+            [
+              -75.6967656,
+              45.3890098
+            ],
+            [
+              -75.6966013,
+              45.3890838
+            ],
+            [
+              -75.6964178,
+              45.3891721
+            ],
+            [
+              -75.6963721,
+              45.3891934
+            ],
+            [
+              -75.6964201,
+              45.3892442
+            ],
+            [
+              -75.6964495,
+              45.3892305
+            ],
+            [
+              -75.6970531,
+              45.3898702
+            ],
+            [
+              -75.6970105,
+              45.38989
+            ],
+            [
+              -75.6970596,
+              45.3899421
+            ]
+          ]
+        ]
+      },
+      "id": "way/416631401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/729957965",
+        "amenity": "parking",
+        "fee": "yes",
+        "orientation": "perpendicular",
+        "parking": "street_side"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6962552,
+              45.3867762
+            ],
+            [
+              -75.6963444,
+              45.386775
+            ],
+            [
+              -75.696332,
+              45.3863159
+            ],
+            [
+              -75.6962428,
+              45.3863171
+            ],
+            [
+              -75.6962552,
+              45.3867762
+            ]
+          ]
+        ]
+      },
+      "id": "way/729957965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/766382050",
+        "amenity": "parking",
+        "capacity": "6",
+        "mapillary": "1087077195112291",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6995982,
+              45.3826307
+            ],
+            [
+              -75.6994923,
+              45.3825225
+            ],
+            [
+              -75.6994398,
+              45.3825478
+            ],
+            [
+              -75.6995457,
+              45.382656
+            ],
+            [
+              -75.6995982,
+              45.3826307
+            ]
+          ]
+        ]
+      },
+      "id": "way/766382050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1223914680",
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6967914,
+              45.3839204
+            ],
+            [
+              -75.6968788,
+              45.3839076
+            ],
+            [
+              -75.6972266,
+              45.3837549
+            ],
+            [
+              -75.6972452,
+              45.3836847
+            ],
+            [
+              -75.6972491,
+              45.3836185
+            ],
+            [
+              -75.6972356,
+              45.3835632
+            ],
+            [
+              -75.6969991,
+              45.3833146
+            ],
+            [
+              -75.6963798,
+              45.3836118
+            ],
+            [
+              -75.6964183,
+              45.3838333
+            ],
+            [
+              -75.6964248,
+              45.3838731
+            ],
+            [
+              -75.6965121,
+              45.3838644
+            ],
+            [
+              -75.6965212,
+              45.3839792
+            ],
+            [
+              -75.6964395,
+              45.3840197
+            ],
+            [
+              -75.6964457,
+              45.3840776
+            ],
+            [
+              -75.6967914,
+              45.3839204
+            ]
+          ]
+        ]
+      },
+      "id": "way/1223914680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1297487424",
+        "amenity": "parking",
+        "parking": "surface",
+        "surface": "gravel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6980981,
+              45.3905647
+            ],
+            [
+              -75.6973726,
+              45.3899459
+            ],
+            [
+              -75.6972183,
+              45.3900222
+            ],
+            [
+              -75.6978151,
+              45.3906721
+            ],
+            [
+              -75.6980981,
+              45.3905647
+            ]
+          ]
+        ]
+      },
+      "id": "way/1297487424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1297487441",
+        "amenity": "parking",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6973343,
+              45.3819634
+            ],
+            [
+              -75.6971654,
+              45.3817966
+            ],
+            [
+              -75.6971131,
+              45.381742
+            ],
+            [
+              -75.6970494,
+              45.381775
+            ],
+            [
+              -75.6970044,
+              45.3818409
+            ],
+            [
+              -75.6972042,
+              45.3820236
+            ],
+            [
+              -75.6973343,
+              45.3819634
+            ]
+          ]
+        ]
+      },
+      "id": "way/1297487441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1297487442",
+        "amenity": "parking",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.6987526,
+              45.3813594
+            ],
+            [
+              -75.6988114,
+              45.3813313
+            ],
+            [
+              -75.6987274,
+              45.3812445
+            ],
+            [
+              -75.6986685,
+              45.3812726
+            ],
+            [
+              -75.6987526,
+              45.3813594
+            ]
+          ]
+        ]
+      },
+      "id": "way/1297487442"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1435884463",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "mapillary": "946595726131800",
+        "name": "Carleton U",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "5813",
+        "shelter": "yes",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG605"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6965033,
+          45.3849696
+        ]
+      },
+      "id": "node/1435884463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2406257852",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "mapillary": "935372483670423",
+        "name": "Bronson / Colonel By",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "6680",
+        "shelter": "yes",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG280",
+        "survey:date": "2019-03-25",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6957757,
+          45.3929817
+        ]
+      },
+      "id": "node/2406257852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2935921841",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "cafe",
+        "brand": "Tim Hortons",
+        "brand:wikidata": "Q175106",
+        "brand:wikipedia": "en:Tim Hortons",
+        "cuisine": "coffee_shop",
+        "drive_through": "no",
+        "name": "Tim Hortons",
+        "takeaway": "yes",
+        "website": "https://www.timhortons.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6938094,
+          45.3861027
+        ]
+      },
+      "id": "node/2935921841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3755250944",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "cafe",
+        "brand": "Tim Hortons",
+        "brand:wikidata": "Q175106",
+        "brand:wikipedia": "en:Tim Hortons",
+        "cuisine": "coffee_shop",
+        "drive_through": "no",
+        "internet_access": "wlan",
+        "level": "R1",
+        "name": "Tim Hortons",
+        "opening_hours": "closed \"Closed till further notice\"",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6959664,
+          45.3821288
+        ]
+      },
+      "id": "node/3755250944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3755250945",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "cafe",
+        "brand": "Tim Hortons",
+        "brand:wikidata": "Q175106",
+        "brand:wikipedia": "en:Tim Hortons",
+        "cuisine": "coffee_shop",
+        "drive_through": "no",
+        "internet_access": "wlan",
+        "level": "1",
+        "name": "Tim Hortons",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.698025,
+          45.3833928
+        ]
+      },
+      "id": "node/3755250945"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3872339560",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "cafe",
+        "brand": "Chatime",
+        "brand:wikidata": "Q16829306",
+        "brand:wikipedia": "en:Second Cup",
+        "cuisine": "bubble_tea",
+        "internet_access": "wlan",
+        "level": "1",
+        "name": "Chatime",
+        "opening_hours": "Mo-Th 11:00-18:30",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "website": "https://dining.carleton.ca/cu-facilities/chatime/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6984018,
+          45.384313
+        ]
+      },
+      "id": "node/3872339560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4413202319",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "image": "https://storage8.openstreetcam.org/files/photo/2018/6/9/lth/1226867_7cbaa_395.jpg",
+        "name": "Bronson / Colonel By",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "6682",
+        "shelter": "no",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG270",
+        "survey:date": "2018-06-09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6953882,
+          45.3916422
+        ]
+      },
+      "id": "node/4413202319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4413202332",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Campus / Commons",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "6612",
+        "shelter": "no",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6967321,
+          45.3879025
+        ]
+      },
+      "id": "node/4413202332"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4413202426",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "University / Bronson",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "6790",
+        "shelter": "no",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG450"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.695122,
+          45.38945
+        ]
+      },
+      "id": "node/4413202426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5154098065",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "mapillary": "794184747870281",
+        "mapillary_1": "BqrIYNwj4Al3Bnm5LtkN1Q",
+        "mapillary_2": "U52-lQOd080cHsUnZ2O-Yw",
+        "name": "University / Gymnasium",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "6610",
+        "shelter": "yes",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG615"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6948046,
+          45.3855198
+        ]
+      },
+      "id": "node/5154098065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5155564931",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "restaurant",
+        "mapillary": "9oD7awSqGuPn2NQXukaP-A",
+        "name": "T & J Style Kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.693899,
+          45.384546
+        ]
+      },
+      "id": "node/5155564931"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5156244577",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "restaurant",
+        "level": "1",
+        "mapillary": "313937826940737",
+        "mapillary_1": "ixsjoo3fxcIjKauCee0VIQ",
+        "name": "Oliver's Pub and Patio",
+        "operator": "CUSA",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6975534,
+          45.3831656
+        ]
+      },
+      "id": "node/5156244577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5159729978",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "internet_access": "yes",
+        "level": "1",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "source": "mapillary",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6994825,
+          45.3822517
+        ]
+      },
+      "id": "node/5159729978"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5163719545",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "food_court",
+        "level": "1",
+        "mapillary": "296079348809457",
+        "name": "Oasis",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6971049,
+          45.3870979
+        ]
+      },
+      "id": "node/5163719545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5173711741",
+        "amenity": "parking",
+        "mapillary": "188735243097527"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6951299,
+          45.3850778
+        ]
+      },
+      "id": "node/5173711741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5480620484",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "mapillary": "156977113051683",
+        "name": "Bronson / University",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "6790",
+        "shelter": "no",
+        "source": "City of Ottawa",
+        "stop_id": "CG450",
+        "survey:date": "2019-06-17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6944391,
+          45.3903309
+        ]
+      },
+      "id": "node/5480620484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5504236500",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6934163,
+          45.3861242
+        ]
+      },
+      "id": "node/5504236500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5504236501",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "cuisine": "sandwich",
+        "level": "2",
+        "name": "Subway",
+        "operator": "Aramark",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6975185,
+          45.3833907
+        ]
+      },
+      "id": "node/5504236501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5614137260",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "operator": "Aramark",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.ca/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6974168,
+          45.3871072
+        ]
+      },
+      "id": "node/5614137260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497589",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "restaurant",
+        "level": "4",
+        "name": "Bakers",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6980699,
+          45.3834479
+        ]
+      },
+      "id": "node/5622497589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497590",
+        "amenity": "cafe",
+        "name": "Rooster's Coffeehouse",
+        "operator": "CUSA",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6978661,
+          45.3831012
+        ]
+      },
+      "id": "node/5622497590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497591",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "brand": "Booster Juice",
+        "brand:wikidata": "Q4943796",
+        "brand:wikipedia": "en:Booster Juice",
+        "cuisine": "juice",
+        "level": "4",
+        "name": "Booster Juice",
+        "operator": "Aramark",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6980632,
+          45.3833339
+        ]
+      },
+      "id": "node/5622497591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497592",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "level": "4",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "operator": "Aramark",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6981631,
+          45.383023
+        ]
+      },
+      "id": "node/5622497592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497593",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "level": "2",
+        "name": "The Kitchen Exchange",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6975281,
+          45.3833128
+        ]
+      },
+      "id": "node/5622497593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497594",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "level": "2",
+        "name": "The Market",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6975533,
+          45.3833288
+        ]
+      },
+      "id": "node/5622497594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497595",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "level": "2",
+        "name": "The Greens",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6975221,
+          45.3832602
+        ]
+      },
+      "id": "node/5622497595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497596",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "chinese",
+        "level": "2",
+        "name": "Spring Rolls Go",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.697571,
+          45.3832788
+        ]
+      },
+      "id": "node/5622497596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497597",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "mexican",
+        "level": "2",
+        "name": "La Cocina",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6976005,
+          45.383308
+        ]
+      },
+      "id": "node/5622497597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497598",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "chicken",
+        "level": "2",
+        "name": "Colonel By Chicken",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6976569,
+          45.3833362
+        ]
+      },
+      "id": "node/5622497598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497599",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "level": "2",
+        "name": "Burger 101",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6976381,
+          45.3833852
+        ]
+      },
+      "id": "node/5622497599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497600",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "sushi",
+        "level": "2",
+        "name": "Bento Sushi",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6974671,
+          45.3832717
+        ]
+      },
+      "id": "node/5622497600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622497602",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "food_court",
+        "level": "2",
+        "name": "The Food Court",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6975563,
+          45.3833716
+        ]
+      },
+      "id": "node/5622497602"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622637384",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "restaurant",
+        "level": "3",
+        "name": "the caf",
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "operator": "Aramark",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6975576,
+          45.3871029
+        ]
+      },
+      "id": "node/5622637384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622637388",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "italian",
+        "level": "1",
+        "name": "Il Forno Tuscano",
+        "opening_hours": "closed \"Closed till further notice\"",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6990168,
+          45.3808605
+        ]
+      },
+      "id": "node/5622637388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622637389",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "level": "1",
+        "name": "The Greens",
+        "opening_hours": "closed \"Closed till further notice\"",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6989289,
+          45.3808855
+        ]
+      },
+      "id": "node/5622637389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622637390",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "level": "1",
+        "name": "Grill Works",
+        "opening_hours": "closed \"Closed till further notice\"",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6989678,
+          45.3809015
+        ]
+      },
+      "id": "node/5622637390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622637391",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "brand": "Pizza Pizza",
+        "brand:wikidata": "Q1194143",
+        "brand:wikipedia": "en:Pizza Pizza",
+        "cuisine": "pizza",
+        "level": "1",
+        "name": "Pizza Pizza",
+        "opening_hours": "closed \"Closed till further notice\"",
+        "operator": "Aramark",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.69901,
+          45.3808907
+        ]
+      },
+      "id": "node/5622637391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622637392",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "food_court",
+        "level": "1",
+        "name": "Loeb Cafe",
+        "opening_hours": "closed \"Closed till further notice\"",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6989738,
+          45.3808735
+        ]
+      },
+      "id": "node/5622637392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622637393",
+        "addr:housenumber": "1125",
+        "addr:street": "Colonel By Drive",
+        "amenity": "fast_food",
+        "level": "5",
+        "name": "The Bent Coin",
+        "operator": "Aramark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6942813,
+          45.3832491
+        ]
+      },
+      "id": "node/5622637393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8189056212",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "University / Stadium",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "6611",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG620"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6954751,
+          45.3872704
+        ]
+      },
+      "id": "node/8189056212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8189056214",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Raven / University",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "4881",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG692"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6933554,
+          45.3841436
+        ]
+      },
+      "id": "node/8189056214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8189056216",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Raven / University",
+        "network": "OC Transpo",
+        "network:wikidata": "Q3347525",
+        "network:wikipedia": "en:OC Transpo",
+        "operator": "OC Transpo",
+        "public_transport": "platform",
+        "ref": "4880",
+        "source": "City of Ottawa",
+        "source:ref": "OC Transpo",
+        "source:stop_id": "gtfs",
+        "stop_id": "CG690"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6938483,
+          45.3841466
+        ]
+      },
+      "id": "node/8189056216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9234126992",
+        "amenity": "cafe",
+        "brand": "Bridgehead",
+        "brand:wikidata": "Q4966509",
+        "brand:wikipedia": "en:Bridgehead Coffee",
+        "cuisine": "coffee_shop",
+        "name": "Bridgehead",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6968296,
+          45.3841077
+        ]
+      },
+      "id": "node/9234126992"
+    }
+  ]
+}
