@@ -97,50 +97,8 @@ fetch('geojson-files/cu-landmarks.geojson')
         console.error('LandmarkOverlay error:', err.message);
     });
 
-// Toggle Button for Landmarks
-var toggleControl = L.control({ position: 'bottomright' });
 
-toggleControl.onAdd = function() {
-    var btn = L.DomUtil.create('button');
-
-    btn.textContent = 'Hide Landmarks';
-    btn.style.cssText = [
-        'background: #1a1a1a',
-        'color: white',
-        'border: 2px solid white',
-        'padding: 10px 14px',
-        'border-radius: 5px',
-        'font: 700 13px "Helvetica Neue", Arial, sans-serif',
-        'cursor: pointer',
-        'letter-spacing: 0.04em',
-        'box-shadow: 0 2px 6px rgba(0,0,0,0.3)',
-        'min-width: 150px'
-    ].join(';');
-
-    // Prevent map click/drag events firing through the button
-    L.DomEvent.disableClickPropagation(btn);
-
-    btn.addEventListener('click', function() {
-        if (!landmarkLayer) return; // GeoJSON not loaded yet
-
-        if (landmarksVisible) {
-            map.removeLayer(landmarkLayer);
-            btn.textContent = 'Show Landmarks';
-            btn.style.background = '#BF112B'; // Carleton red when off
-        } else {
-            map.addLayer(landmarkLayer);
-            btn.textContent = 'Hide Landmarks';  // ← FIX 3: was 'Hide Tunnels'
-            btn.style.background = '#1a1a1a';
-        }
-        landmarksVisible = !landmarksVisible;
-    });
-
-    return btn;
-};
-
-toggleControl.addTo(map);
-
-// Landmark Legend Overlay
+// 1. MOVED THE LEGEND SETUP HERE (Before the toggle button)
 var landmarkLegend = L.control({ position: 'bottomleft' });
 
 landmarkLegend.onAdd = function() {
@@ -180,3 +138,53 @@ landmarkLegend.onAdd = function() {
 };
 
 landmarkLegend.addTo(map);
+
+
+// 2. TOGGLE BUTTON CONTROL
+var toggleControl = L.control({ position: 'bottomright' });
+
+toggleControl.onAdd = function() {
+    var btn = L.DomUtil.create('button');
+
+    btn.textContent = 'Hide Landmarks';
+    btn.style.cssText = [
+        'background: #1a1a1a',
+        'color: white',
+        'border: 2px solid white',
+        'padding: 10px 14px',
+        'border-radius: 5px',
+        'font: 700 13px "Helvetica Neue", Arial, sans-serif',
+        'cursor: pointer',
+        'letter-spacing: 0.04em',
+        'box-shadow: 0 2px 6px rgba(0,0,0,0.3)',
+        'min-width: 150px'
+    ].join(';');
+
+    // Prevent map click/drag events firing through the button
+    L.DomEvent.disableClickPropagation(btn);
+
+    btn.addEventListener('click', function() {
+        if (!landmarkLayer) return; // GeoJSON not loaded yet
+
+        if (landmarksVisible) {
+            // HIDE logic
+            map.removeLayer(landmarkLayer);
+            map.removeControl(landmarkLegend); // <-- Removed the legend here
+
+            btn.textContent = 'Show Landmarks';
+            btn.style.background = '#BF112B'; // Carleton red when off
+        } else {
+            // SHOW logic
+            map.addLayer(landmarkLayer);
+            landmarkLegend.addTo(map);         // <-- Added the legend back here
+
+            btn.textContent = 'Hide Landmarks';
+            btn.style.background = '#1a1a1a';
+        }
+        landmarksVisible = !landmarksVisible;
+    });
+
+    return btn;
+};
+
+toggleControl.addTo(map);
