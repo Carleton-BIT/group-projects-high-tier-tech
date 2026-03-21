@@ -1,11 +1,22 @@
 // Initialize the map, turn OFF the default top-left zoom, and set the view
 window.map = L.map('map', { zoomControl: false }).setView([45.3868, -75.6976], 15);
 
-// Add the OpenStreetMap tiles
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// Define Base Maps (Street and Satellite)
+var streetMap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(window.map);
+}).addTo(window.map); // Add streetMap by default
+
+var satelliteMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+
+// Group the Base Maps
+var baseMaps = {
+    "Street View": streetMap,
+    "Satellite Mode": satelliteMap
+};
 
 // Add zoom and scale controls
 L.control.zoom({ position: 'topright' }).addTo(window.map);
@@ -163,4 +174,5 @@ var overlays = {
     "Show Restaurants and Cafes" : foodLayer,
 };
 
-L.control.layers(null, overlays).addTo(window.map);
+// Add baseMaps and overlays to the control
+L.control.layers(baseMaps, overlays).addTo(window.map);
