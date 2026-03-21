@@ -1,5 +1,5 @@
 // Initialize the map, turn OFF the default top-left zoom, and set the view
-window.map = L.map('map', { zoomControl: false }).setView([45.3831, -75.6976], 15);
+window.map = L.map('map', { zoomControl: false }).setView([45.3868, -75.6976], 15);
 
 // Add the OpenStreetMap tiles
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -95,25 +95,66 @@ buildingList.push(buildingMarker);
 // add parking markers
 
 var parkingList = [];
+parkingList.push(L.marker([45.38095865989225, -75.7004369622975], {icon: getIcon('parking')}).bindPopup("<b>Parking P1</b>"));
+
+parkingList.push(L.marker([45.38484857155134, -75.69266790267329], {icon: getIcon('parking')}).bindPopup("<b>Parking P3</b>"));
+
+parkingList.push(L.marker([45.385361689601964, -75.69536715332391], {icon: getIcon('parking')}).bindPopup("<b>Parking P4</b>"));
+
+parkingList.push(L.marker([45.387311208285574, -75.69319728442375], {icon: getIcon('parking')}).bindPopup("<b>Parking P5</b>"));
+
+parkingList.push(L.marker([45.389489214326865, -75.69884147064522], {icon: getIcon('parking')}).bindPopup("<b>Parking P6</b>"));
 
 parkingList.push(L.marker([45.39068, -75.69671], {icon: getIcon('parking')}).bindPopup("<b>Parking P7</b>"));
 
+parkingList.push(L.marker([45.384836400058404, -75.69322679132509], {icon: getIcon('parking')}).bindPopup("<b>Parking P10</b>"));
+
+parkingList.push(L.marker([45.38490638610292, -75.69398930607959], {icon: getIcon('parking')}).bindPopup("<b>Parking P11</b>"));
+
+parkingList.push(L.marker([45.38451689745194, -75.69154146044873], {icon: getIcon('parking')}).bindPopup("<b>Parking P14</b>"));
+
+parkingList.push(L.marker([45.3855840407557, -75.69374023053521], {icon: getIcon('parking')}).bindPopup("<b>Parking P15</b>"));
+
+parkingList.push(L.marker([45.38933918729486, -75.69710156463712], {icon: getIcon('parking')}).bindPopup("<b>Parking P18</b>"));
+
+
 // add bus stop markers
 var busList = [];
+
 busList.push(L.marker([45.3904, -75.6939], {icon: getIcon('bus_stop')}).bindPopup(`<b>${landmarkIcons.bus_stop.label}</b>`));
+
 busList.push(L.marker([45.384889946875504, -75.69644989532271], {icon: getIcon('bus_stop')}).bindPopup(`<b>${landmarkIcons.bus_stop.label}</b>`));
+
 busList.push(L.marker([45.38700111364135, -75.69653144139238], {icon: getIcon('bus_stop')}).bindPopup(`<b>${landmarkIcons.bus_stop.label}</b>`));
+
+busList.push(L.marker([45.38713211868861, -75.69543862530935], {icon: getIcon('bus_stop')}).bindPopup(`<b>${landmarkIcons.bus_stop.label}</b>`));
 
 // add restaurant and cafe markers
 var foodList = [];
-foodList.push(L.marker([45.3835, -75.6975], {icon: getIcon('restaurant')}).bindPopup("<b>Oasis Food Court</b>"));
-foodList.push(L.marker([45.3819, -75.6990], {icon: getIcon('cafe')}).bindPopup("<b>Page Break Cafe</b>"));
+foodList.push(L.marker([45.38444691092358, -75.69381600727175], {icon: getIcon('restaurant')}).bindPopup("<b>T & J Style Kitchen</b>"));
+
+foodList.push(L.marker([45.38690139455082, -75.69889036376755], {icon: getIcon('restaurant')}).bindPopup("<b>the caf</b>"));
+
+foodList.push(L.marker([45.387070932495874, -75.6972810383368], {icon: getIcon('cafe')}).bindPopup("<b>Starbucks</b>"));
+
+foodList.push(L.marker([45.382329196114426, -75.69949455255241], {icon: getIcon('cafe')}).bindPopup("<b>Starbucks</b>"));
+
+foodList.push(L.marker([45.383029302424184, -75.69818967752366], {icon: getIcon('cafe')}).bindPopup("<b>Starbucks</b>"));
+
+foodList.push(L.marker([45.38606570756748, -75.69386366444945], {icon: getIcon('cafe')}).bindPopup("<b>Tim Hortons</b>"));
+
+foodList.push(L.marker([45.382162690068874, -75.69590492771918], {icon: getIcon('cafe')}).bindPopup("<b>Tim Hortons</b>"));
+
+foodList.push(L.marker([45.3842765085715, -75.69845175033419], {icon: getIcon('cafe')}).bindPopup("<b>Chatime</b>"));
+
+foodList.push(L.marker([45.383893101418984, -75.69732530808677], {icon: getIcon('cafe')}).bindPopup("<b>Bridgehead</b>"));
+
 
 // --- Adding The Toggle ---
 var buildingLayer = L.layerGroup(buildingList);
-var parkingLayer = L.layerGroup(parkingList).addTo(window.map);
-var busLayer = L.layerGroup(busList).addTo(window.map);
-var foodLayer = L.layerGroup(foodList).addTo(window.map);
+var parkingLayer = L.layerGroup(parkingList);
+var busLayer = L.layerGroup(busList);
+var foodLayer = L.layerGroup(foodList);
 
 var overlays = {
     "Show Buildings" : buildingLayer,
