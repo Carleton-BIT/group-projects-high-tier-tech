@@ -1,16 +1,29 @@
-// Initialize the map, turn OFF the default top-left zoom, and set the view
-window.map = L.map('map', { zoomControl: false }).setView([45.3831, -75.6976], 15);
-
-// Add the OpenStreetMap tiles
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// 1. Define your two base tile layers
+var streetMap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(window.map);
+});
+
+var satelliteMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+
+// 2. Initialize the map and set "streetMap" as the default layer
+window.map = L.map('map', {
+    zoomControl: false,
+    layers: [streetMap] // This tells the map to load the street map first
+}).setView([45.3831, -75.6976], 15);
 
 // Add zoom and scale controls
 L.control.zoom({ position: 'topright' }).addTo(window.map);
 L.control.scale().addTo(window.map);
 
+// 3. Create an object holding the base maps
+var baseMaps = {
+    "Street View": streetMap,
+    "Satellite Mode": satelliteMap
+};
 
 // --- Building Markers ---
 var buildingList = [];
@@ -81,4 +94,4 @@ var overlays = {
     "Show Buildings": buildingLayer,
 };
 
-L.control.layers(null, overlays).addTo(window.map);
+L.control.layers(baseMaps, overlays).addTo(window.map);
