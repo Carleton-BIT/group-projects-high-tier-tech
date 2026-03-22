@@ -1,11 +1,22 @@
 // Initialize the map, turn OFF the default top-left zoom, and set the view
 window.map = L.map('map', { zoomControl: false }).setView([45.3868, -75.6976], 15);
 
-// Add the OpenStreetMap tiles
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// Define Base Maps (Street and Satellite)
+var streetMap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(window.map);
+}).addTo(window.map); // Add streetMap by default
+
+var satelliteMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+
+// Group the Base Maps
+var baseMaps = {
+    "Street View": streetMap,
+    "Satellite Mode": satelliteMap
+};
 
 // Add zoom and scale controls
 L.control.zoom({ position: 'topright' }).addTo(window.map);
@@ -18,6 +29,7 @@ var landmarkIcons = {
     'parking':      { file: 'webpage-assets/parking-1.svg',  color: '#FFAA00', label: 'Parking'       },
     'bus_stop':     { file: 'webpage-assets/bus-33.svg',      color: '#0077EE', label: 'Bus Stop'      },
     'bus_station':  { file: 'webpage-assets/bus-33.svg',      color: '#0077EE', label: 'Bus Station'   },
+    'train_stop':   { file: 'webpage-assets/train-20.svg',    color: '#34A853', label: 'Train Stop'    }, // Added Train Stop icon
     'cafe':         { file: 'webpage-assets/coffee-23.svg',   color: '#7B4F2E', label: 'Café'          },
     'restaurant':   { file: 'webpage-assets/food-8.svg',      color: '#BF112B', label: 'Restaurant'    },
 };
@@ -129,6 +141,13 @@ busList.push(L.marker([45.38700111364135, -75.69653144139238], {icon: getIcon('b
 
 busList.push(L.marker([45.38713211868861, -75.69543862530935], {icon: getIcon('bus_stop')}).bindPopup(`<b>${landmarkIcons.bus_stop.label}</b>`));
 
+//add train stop makers
+var trainList = []; // Added Train List
+
+trainList.push(L.marker([45.3855, -75.6957], {icon: getIcon('train_stop')}).bindPopup(`<b>${landmarkIcons.train_stop.label}</b>`));
+
+trainList.push(L.marker([45.3855, -75.6960], {icon: getIcon('train_stop')}).bindPopup(`<b>${landmarkIcons.train_stop.label}</b>`));
+
 // add restaurant and cafe markers
 var foodList = [];
 foodList.push(L.marker([45.38444691092358, -75.69381600727175], {icon: getIcon('restaurant')}).bindPopup("<b>T & J Style Kitchen</b>"));
@@ -150,17 +169,21 @@ foodList.push(L.marker([45.3842765085715, -75.69845175033419], {icon: getIcon('c
 foodList.push(L.marker([45.383893101418984, -75.69732530808677], {icon: getIcon('cafe')}).bindPopup("<b>Bridgehead</b>"));
 
 
+
 // --- Adding The Toggle ---
 var buildingLayer = L.layerGroup(buildingList);
 var parkingLayer = L.layerGroup(parkingList);
 var busLayer = L.layerGroup(busList);
+var trainLayer = L.layerGroup(trainList); // Added Train Layer
 var foodLayer = L.layerGroup(foodList);
 
 var overlays = {
     "Show Buildings" : buildingLayer,
     "Show Parking Lots" : parkingLayer,
     "Show Bus Stops" : busLayer,
+    "Show Train Stops" : trainLayer, // Added to Overlays
     "Show Restaurants and Cafes" : foodLayer,
 };
 
-L.control.layers(null, overlays).addTo(window.map);
+// Add baseMaps and overlays to the control
+L.control.layers(baseMaps, overlays).addTo(window.map);
