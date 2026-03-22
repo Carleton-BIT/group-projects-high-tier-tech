@@ -10,16 +10,23 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 
     <link rel="stylesheet" href="CSS/map-style.css">
+
+
 </head>
 
 <body>
 
-<nav>
-    <a href="./index.html">Home</a>
-    <a class="active" href="#">Map</a>
-</nav>
-
-<h2>🗺️ Campus Map</h2>
+<header class="cu-header">
+    <div class="header-content">
+        <img src="webpage-assets/brand-logo-1200w-1-1024x256.jpg" alt="Carleton University Logo" class="cu-logo">
+        <h1 class="site-title">Carleton Map</h1>
+    </div>
+    <nav class="cu-nav">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./map.html">Map</a>
+        <a href="./aboutus.html">About Us</a>
+    </nav>
+</header>
 
 <div class="controls-container">
     <button id="gotoUC" class="map-btn">
@@ -74,6 +81,18 @@
             <option value="P15">Parking P15</option>
             <option value="P18">Parking Garage (P18)</option>
         </optgroup>
+
+        <optgroup label="Food & Drink">
+            <option value="T&J">T & J Style Kitchen</option>
+            <option value="The Caf">The Caf</option>
+            <option value="Starbucks-MacOdrum">Starbucks (MacOdrum)</option>
+            <option value="Starbucks-UC">Starbucks (University Centre)</option>
+            <option value="Starbucks-Residence">Starbucks (Residence)</option>
+            <option value="TimHortons-UC">Tim Hortons (University Centre)</option>
+            <option value="TimHortons-River">Tim Hortons (River)</option>
+            <option value="Chatime">Chatime</option>
+            <option value="Bridgehead">Bridgehead</option>
+        </optgroup>
     </select>
 
     <span style="font-weight: bold; font-size: 1.1rem;">TO</span>
@@ -126,6 +145,18 @@
             <option value="P15">Parking P15</option>
             <option value="P18">Parking Garage (P18)</option>
         </optgroup>
+
+        <optgroup label="Food & Drink">
+            <option value="T&J">T & J Style Kitchen</option>
+            <option value="The Caf">The Caf</option>
+            <option value="Starbucks-MacOdrum">Starbucks (MacOdrum)</option>
+            <option value="Starbucks-UC">Starbucks (University Centre)</option>
+            <option value="Starbucks-Residence">Starbucks (Residence)</option>
+            <option value="TimHortons-UC">Tim Hortons (University Centre)</option>
+            <option value="TimHortons-River">Tim Hortons (River)</option>
+            <option value="Chatime">Chatime</option>
+            <option value="Bridgehead">Bridgehead</option>
+        </optgroup>
     </select>
 
     <button id="routeBtn" class="map-btn" style="background: #BF112B; color: white;">Get Directions</button>
@@ -147,4 +178,8 @@
 <script src="Scripts/BuildingOverlay.js"></script>
 <script src="Scripts/LandmarkOverlay.js"></script>
 </body>
+
+<footer class="cu-footer">
+    <p>&copy; 2026 Carleton University</p>
+</footer>
 </html>

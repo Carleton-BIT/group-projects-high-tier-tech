@@ -1,115 +1,167 @@
+/* Core Resets & Brand Variables */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+
+:root {
+    --cu-red: #E31837; /* Official Carleton Red */
+    --cu-black: #000000;
+    --cu-grey-light: #f4f4f4;
+    --cu-text: #000000;
+}
+
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f4f4;
-    color: #1a1a1a;
-    min-height: 100vh;
+    /* Carleton uses Helvetica/Arial as their primary digital font */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: var(--cu-black);
+    line-height: 1.6;
 }
- 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 25px;
-    background: #1a1a1a;
-    border-bottom: 4px solid #BF112B;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+
+
+/* --- CU THEME HEADER --- */
+.cu-header {
+    background: var(--cu-black);
 }
- 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
- 
-/* NAV */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
- 
-nav a {
-    text-decoration: none;
-    color: #cccccc;
-    font-weight: bold;
-    font-size: 1.1rem;
-    position: relative;
-    transition: color 0.2s;
-}
- 
-nav a:hover {
-    color: #ffffff;
-}
- 
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #BF112B;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
-}
- 
-nav a:hover::after {
-    width: 100%;
-}
- 
-/* MAIN CONTENT */
-main {
-    text-align: center;
-    margin-top: 100px;
-    padding: 20px;
-}
- 
-main h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    color: #1a1a1a;
-}
- 
-main p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-    color: #444444;
-}
- 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 28px;
-    background: #BF112B;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 4px;
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    transition: background 0.2s, transform 0.2s;
-}
- 
-.btn:hover {
-    transform: scale(1.05);
-    background: #9e0e24;
-}
- 
-/* MAP CONTAINER */
-.map-container {
-    width: 100%;
-    height: 500px;
-    background: #e0e0e0;
+
+.header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid #cccccc;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    justify-content: center; /* Puts the Site Title exactly in the center */
+    position: relative;      /* Allows us to lock the logo to the left */
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 85px;        /* Ensures the header is tall enough for the logo */
+}
+
+.cu-logo {
+    height: 40px;
+    width: auto;
+    position: absolute;      /* Locks the logo to the left side */
+    left: 40px;              /* Matches the padding of the container */
+}
+
+.site-title {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0;               /* Removes any default spacing */
+}
+
+/* --- CU THEME NAVIGATION --- */
+.cu-nav {
+    display: flex;
+    justify-content: center; /* Pushes the links to the center */
+    background: #ffffff;
+    width: 100%;             /* Spans the full width at the bottom of the header */
+    border-bottom: 5px solid var(--cu-red); /* Red anchor line moved to bottom of Nav */
+}
+
+.cu-nav a {
+    text-decoration: none;
+    color: var(--cu-black);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 25px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.cu-nav a:hover {
+    color: var(--cu-red);
+    background: var(--cu-grey-light);
+}
+
+.cu-nav a.active {
+    border-bottom: 3px solid var(--cu-red);
+    color: var(--cu-red);
+}
+
+/* --- HERO BANNER (Standard on CU Pages) --- */
+.hero-banner {
+    background: var(--cu-grey-light);
+    padding: 60px 40px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hero-banner h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--cu-black);
+}
+
+/* --- MAIN CONTENT BLOCKS --- */
+.cu-container {
+    max-width: 800px; /* Constrains text width for readability */
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.content-block {
+    margin-bottom: 40px;
+}
+
+.content-block h3 {
+    font-size: 1.6rem;
+    color: var(--cu-black);
+    margin-bottom: 15px;
+    border-left: 4px solid var(--cu-red);
+    padding-left: 15px;
+}
+
+.content-block p {
+    font-size: 1.1rem;
+    color: var(--cu-text);
+}
+
+/* --- FOOTER --- */
+.cu-footer {
+    background: var(--cu-black);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+/* --- CU THEME BUTTONS --- */
+.cu-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--cu-red);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
     border-radius: 4px;
-    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(227, 24, 55, 0.3);
+}
+
+.cu-btn:hover {
+    background: #C2122B;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+/* Container for the tech logos */
+.tech-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+/* Ensure the tech logos are a consistent, reasonable size */
+.leaflet-logo,
+.OpenStreetMap-logo {
+    max-height: 60px;
+    width: auto;
 }

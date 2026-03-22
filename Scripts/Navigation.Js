@@ -52,7 +52,18 @@ document.addEventListener("DOMContentLoaded", function() {
         "P11": [45.38490638610292, -75.69398930607959],
         "P14": [45.38451689745194, -75.69154146044873],
         "P15": [45.3855840407557, -75.69374023053521],
-        "P18": [45.38933918729486, -75.69710156463712]
+        "P18": [45.38933918729486, -75.69710156463712],
+
+        // Food and Drink
+        "T&J": [45.38444691092358, -75.69381600727175],
+        "The Caf": [45.38690139455082, -75.69889036376755],
+        "Starbucks-MacOdrum": [45.387070932495874, -75.6972810383368],
+        "Starbucks-UC": [45.382329196114426, -75.69949455255241],
+        "Starbucks-Residence": [45.383029302424184, -75.69818967752366],
+        "TimHortons-UC": [45.38606570756748, -75.69386366444945],
+        "TimHortons-River": [45.382162690068874, -75.69590492771918],
+        "Chatime": [45.3842765085715, -75.69845175033419],
+        "Bridgehead": [45.383893101418984, -75.69732530808677]
     };
 
     // --- Navigation & Routing ---
@@ -61,13 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var routingControl = L.Routing.control({
         waypoints: [],
 
-        // --- ADDED THIS BLOCK ---
         // Explicitly set the router to use the OSRM public server with the 'foot' profile
         router: L.Routing.osrmv1({
             serviceUrl: 'https://router.project-osrm.org/route/v1',
             profile: 'foot'
         }),
-        // ------------------------
 
         routeWhileDragging: false,
         addWaypoints: false,

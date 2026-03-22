@@ -169,6 +169,7 @@ foodList.push(L.marker([45.3842765085715, -75.69845175033419], {icon: getIcon('c
 foodList.push(L.marker([45.383893101418984, -75.69732530808677], {icon: getIcon('cafe')}).bindPopup("<b>Bridgehead</b>"));
 
 
+
 // --- Adding The Toggle ---
 var buildingLayer = L.layerGroup(buildingList);
 var parkingLayer = L.layerGroup(parkingList);

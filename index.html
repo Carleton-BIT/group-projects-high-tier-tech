@@ -1,30 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Carleton Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Carleton Map</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>🗺️ Carleton Map</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="map.html">Map</a>
+<header class="cu-header">
+    <div class="header-content">
+        <img src="webpage-assets/brand-logo-1200w-1-1024x256.jpg" alt="Carleton University Logo" class="cu-logo">
+        <h1 class="site-title">Campus Map</h1>
+    </div>
+    <nav class="cu-nav">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./map.html">Map</a>
+        <a href="./aboutus.html">About Us</a>
     </nav>
 </header>
 
-<main>
-    <h2>Welcome</h2>
-    <p>Explore the Carleton University campus with an interactive map.</p>
-    <p>Find buildings, navigate easily, and discover key locations.</p>
+<section class="hero-banner">
+    <div class="hero-content">
+        <h2>Welcome to Carleton University</h2>
+    </div>
+</section>
 
-    <!-- CTA BUTTON -->
-    <a href="map.html" class="btn">Open Map</a>
+<main class="cu-container">
+    <div class="content-block" style="text-align: center;">
+        <p style="font-size: 1.3rem; font-weight: bold; color: #1a1a1a;">Explore the Carleton University campus with an interactive map.</p>
+        <p style="margin-bottom: 30px;">Find buildings, navigate easily, and discover key locations.</p>
+
+        <a href="map.html" class="cu-btn">Open Map</a>
+    </div>
 </main>
+
+<footer class="cu-footer">
+    <p>&copy; 2026 Carleton University</p>
+</footer>
 
 </body>
 </html>
