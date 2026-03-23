@@ -74,13 +74,13 @@ toggleControl.onAdd = function() {
         if (tunnelsVisible) {
             // HIDE LAYER AND LEGEND
             map.removeLayer(tunnelLayer);
-            map.removeControl(legend); // <-- Removes the legend
+            map.removeControl(legend);
             btn.textContent = 'Show Tunnels';
             btn.style.background = '#BF112B';
         } else {
             // SHOW LAYER AND LEGEND
             map.addLayer(tunnelLayer);
-            legend.addTo(map); // <-- Brings the legend back
+            legend.addTo(map);
             btn.textContent = 'Hide Tunnels';
             btn.style.background = '#1a1a1a';
         }
@@ -101,6 +101,9 @@ fetch('geojson-files/cu-tunnels.geojson')
         return response.json();
     })
     .then(function(data) {
+        // Expose raw GeoJSON globally so Navigation.js can build a routing graph
+        window.tunnelGeoJSON = data;
+
         tunnelLayer = L.geoJSON(data, {
             filter: function(feature) {
                 var name = feature.properties.name || feature.properties.ref || '';

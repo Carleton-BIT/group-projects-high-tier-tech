@@ -18,7 +18,7 @@
 
 <header class="cu-header">
     <div class="header-content">
-        <img src="webpage-assets/brand-logo-1200w-1-1024x256.jpg" alt="Carleton University Logo" class="cu-logo">
+        <img src="webpage-assets/carleton-logo-black-bg.png" alt="Carleton University Logo" class="cu-logo">
         <h1 class="site-title">Carleton Map</h1>
     </div>
     <nav class="cu-nav">
@@ -164,20 +164,23 @@
     <button id="resetBtn" class="map-btn" style="background: #1a1a1a; color: white;">Reset</button>
 </div>
 
-<div class="map-container">
-    <div id="map"></div>
-</div>
-
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
-<script src="Scripts/TopMapOverlay.js"></script>
-<script src="Scripts/Tunnels.js"></script>
-<script src="Scripts/Navigation.Js"></script>
-<script src="Scripts/BuildingOverlay.js"></script>
-<script src="Scripts/LandmarkOverlay.js"></script>
-<script src="Scripts/BoundaryDim.js"></script>
+
+<div class="map-container">
+    <div id="map">
+        <script src="Scripts/TopMapOverlay.js"></script>
+        <script src="Scripts/Tunnels.js"></script>
+        <script src="Scripts/Navigation.js"></script>
+        <script src="Scripts/BuildingInfo.js"></script>
+        <script src="Scripts/BuildingOverlay.js"></script>
+        <script src="Scripts/LandmarkOverlay.js"></script>
+        <script src="Scripts/BoundaryDim.js"></script>
+    </div>
+</div>
+
 </body>
 
 <footer class="cu-footer">

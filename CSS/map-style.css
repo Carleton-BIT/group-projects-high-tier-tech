@@ -3,21 +3,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 6px 40px;
     background: #000000;
     border-bottom: 4px solid #BF112B;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
     color: #ffffff;
 }
 
 header img {
-    height: 50px;
+    height: 35px;
     width: auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 
@@ -31,7 +36,7 @@ header img {
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f4f4;
-    color: #1a1a1a;
+    color: #000000;
 }
 
 /* NAVBAR */
@@ -40,8 +45,7 @@ nav {
     justify-content: center;
     gap: 30px;
     padding: 15px;
-    background: #1a1a1a;
-    border-bottom: 3px solid #BF112B;
+    background: #000000;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
@@ -92,7 +96,7 @@ h2 {
     margin: auto;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     border: 1px solid #cccccc;
 }
 
@@ -104,6 +108,7 @@ h2 {
 /* CONTROLS */
 .controls-container {
     text-align: center;
+    margin-top: 15px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -137,7 +142,7 @@ h2 {
 
 .map-select {
     background: #ffffff;
-    color: #1a1a1a;
+    color: #000000;
     min-width: 200px;
     border: 1px solid #cccccc;
     text-transform: none;

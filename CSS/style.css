@@ -31,19 +31,15 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    justify-content: center; /* Puts the Site Title exactly in the center */
-    position: relative;      /* Allows us to lock the logo to the left */
+    gap: 20px;
     padding: 30px 40px;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 85px;        /* Ensures the header is tall enough for the logo */
 }
 
 .cu-logo {
     height: 40px;
     width: auto;
-    position: absolute;      /* Locks the logo to the left side */
-    left: 40px;              /* Matches the padding of the container */
 }
 
 .site-title {
