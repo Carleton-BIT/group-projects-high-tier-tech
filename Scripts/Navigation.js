@@ -9,12 +9,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var map = window.map;
 
-    // ─────────────────────────────────────────────────────────────────────────
+    // Custom Map Marker Icon
+    var customIcon = L.icon({
+        iconUrl:      'webpage-assets/carleton_map_marker.svg',
+        iconSize:     [36, 46],      // display size in pixels
+        iconAnchor:   [18, 46],      // tip of the pin aligns to the coordinate
+        popupAnchor:  [0, -46],      // popups open above the icon
+        tooltipAnchor:[0, -46]
+    });
+
     // Location Coordinates
     // All entries are used for outdoor routing.
     // Tunnel routing will snap to the nearest tunnel node — buildings not
     // connected to the tunnel network will be rejected via TUNNEL_SNAP_THRESHOLD.
-    // ─────────────────────────────────────────────────────────────────────────
     var locationCoords = {
         // Buildings
         "UC":               [45.3831,             -75.6976            ],
@@ -71,11 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
         "Bridgehead":            [45.383893101418984, -75.69732530808677  ]
     };
 
-    // ─────────────────────────────────────────────────────────────────────────
     // Tunnel Routing — Helper Functions
-    // ─────────────────────────────────────────────────────────────────────────
 
-    /**
+    /*
      * Haversine distance in metres between two [lat, lng] points.
      */
     function haversine(a, b) {
@@ -89,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
     }
 
-    /**
+    /*
      * Stable string key for a [lat, lng] coordinate.
      * Uses 7 decimal places — matches GeoJSON precision.
      */
@@ -97,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return lat.toFixed(7) + ',' + lng.toFixed(7);
     }
 
-    /**
+    /*
      * Build an undirected weighted adjacency graph from the tunnel GeoJSON.
      * Excludes railway features (Trillium Line) and non-pedestrian ways.
      * Returns { graph, coords } where:
@@ -146,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return { graph: graph, coords: coords };
     }
 
-    /**
+    /*
      * Find the graph node nearest to a given [lat, lng] point.
      * Returns { key, dist } — dist is in metres.
      */
@@ -160,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return { key: bestKey, dist: bestDist };
     }
 
-    /**
+    /*
      * Dijkstra's shortest-path algorithm.
      * Returns an ordered array of [lat, lng] waypoints, or null if unreachable.
      */
@@ -212,12 +217,10 @@ document.addEventListener("DOMContentLoaded", function() {
         return path.length >= 2 ? path : null;
     }
 
-    // ─────────────────────────────────────────────────────────────────────────
     // State
-    // ─────────────────────────────────────────────────────────────────────────
     var currentMode = 'outdoor'; // 'outdoor' | 'tunnel'
 
-    /**
+    /*
      * ALL map layers added by the tunnel router are pushed into this array:
      * glow polyline, main route polyline, start marker, end marker.
      * Call clearTunnelLayers() to remove every one of them at once.
@@ -253,6 +256,9 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         lineOptions: {
             styles: [{ color: '#00e0ff', opacity: 0.9, weight: 6 }]
+        },
+        createMarker: function(i, waypoint, n) {
+            return L.marker(waypoint.latLng, { icon: customIcon });
         }
     }).addTo(map);
 
@@ -434,17 +440,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 tunnelLayers.push(routeLayer);
 
                 // ── Start marker ──
-                var startMarker = L.circleMarker(latLngs[0], {
-                    radius: 8, fillColor: '#00e0ff', color: '#fff',
-                    weight: 2, fillOpacity: 1
-                }).bindTooltip('Start: ' + startVal, { permanent: false }).addTo(map);
+                var startMarker = L.marker(latLngs[0], { icon: customIcon })
+                    .bindTooltip('Start: ' + startVal, { permanent: false }).addTo(map);
                 tunnelLayers.push(startMarker);
 
                 // ── End marker ──
-                var endMarker = L.circleMarker(latLngs[latLngs.length - 1], {
-                    radius: 8, fillColor: '#BF112B', color: '#fff',
-                    weight: 2, fillOpacity: 1
-                }).bindTooltip('End: ' + endVal, { permanent: false }).addTo(map);
+                var endMarker = L.marker(latLngs[latLngs.length - 1], { icon: customIcon })
+                    .bindTooltip('End: ' + endVal, { permanent: false }).addTo(map);
                 tunnelLayers.push(endMarker);
 
                 map.fitBounds(routeLayer.getBounds(), { padding: [40, 40] });
