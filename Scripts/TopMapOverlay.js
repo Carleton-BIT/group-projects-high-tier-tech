@@ -104,8 +104,100 @@ buildingList.push(buildingMarker);
 buildingMarker = L.marker([45.38401319521936, -75.69747845760243], {icon: getIcon('building')}).bindPopup("<b>Architecture Building</b><br>.");
 buildingList.push(buildingMarker);
 
-// add parking markers
+// --- Newly Added Academic/Misc. Buildings ---
+buildingMarker = L.marker([45.38267, -75.6993105], {icon: getIcon('building')}).bindPopup("<b>Dunton Tower</b><br>.");
+buildingList.push(buildingMarker);
 
+buildingMarker = L.marker([45.3809161, -75.6990911], {icon: getIcon('building')}).bindPopup("<b>Loeb Building</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3806226, -75.6997666], {icon: getIcon('building')}).bindPopup("<b>HCI</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3805, -75.7001], {icon: getIcon('building')}).bindPopup("<b>VSIM</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3804167, -75.6999805], {icon: getIcon('building')}).bindPopup("<b>SSRB</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3812685, -75.6980839], {icon: getIcon('building')}).bindPopup("<b>ARISE</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3874575, -75.698296], {icon: getIcon('building')}).bindPopup("<b>St. Patrick's Building</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.383386, -75.6943563], {icon: getIcon('building')}).bindPopup("<b>Pigiarvik</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3839255, -75.693274], {icon: getIcon('building')}).bindPopup("<b>Nesbitt Biology Building</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.384096, -75.692662], {icon: getIcon('building')}).bindPopup("<b>National Wildlife</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3845025, -75.693652], {icon: getIcon('building')}).bindPopup("<b>CTTC</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.384479, -75.694682], {icon: getIcon('building')}).bindPopup("<b>Maintenance Building</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.385488, -75.694131], {icon: getIcon('building')}).bindPopup("<b>Colonel By Childcare</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.384900, -75.698153], {icon: getIcon('building')}).bindPopup("<b>Engineering Design Centre</b><br>.");
+buildingList.push(buildingMarker);
+
+// --- Newly Added Athletics ---
+buildingMarker = L.marker([45.3862895, -75.694216], {icon: getIcon('building')}).bindPopup("<b>Athletics</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.388069, -75.6949791], {icon: getIcon('building')}).bindPopup("<b>Tennis Centre</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.385741, -75.693360], {icon: getIcon('building')}).bindPopup("<b>Norm Fenn Gym</b><br>.");
+buildingList.push(buildingMarker);
+
+// --- Newly Added Residences ---
+buildingMarker = L.marker([45.387111, -75.6971102], {icon: getIcon('building')}).bindPopup("<b>Teraanga Commons</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.385860, -75.697485], {icon: getIcon('building')}).bindPopup("<b>Prescott House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3859707, -75.698298], {icon: getIcon('building')}).bindPopup("<b>Frontenac House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.385746, -75.6982275], {icon: getIcon('building')}).bindPopup("<b>Lanark House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.386128, -75.6971775], {icon: getIcon('building')}).bindPopup("<b>Renfrew House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3863945, -75.697097], {icon: getIcon('building')}).bindPopup("<b>Lennox and Addington House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.386695, -75.6972745], {icon: getIcon('building')}).bindPopup("<b>Glengarry House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3865069, -75.6984915], {icon: getIcon('building')}).bindPopup("<b>Grenville House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3869282, -75.698525], {icon: getIcon('building')}).bindPopup("<b>Russell House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.387678, -75.6971526], {icon: getIcon('building')}).bindPopup("<b>Stormont House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.387795, -75.697635], {icon: getIcon('building')}).bindPopup("<b>Dundas House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3879326, -75.698571], {icon: getIcon('building')}).bindPopup("<b>Leeds House</b><br>.");
+buildingList.push(buildingMarker);
+
+buildingMarker = L.marker([45.3884999, -75.6974586], {icon: getIcon('building')}).bindPopup("<b>Rideau House</b><br>.");
+buildingList.push(buildingMarker);
+
+// add parking markers
 var parkingList = [];
 parkingList.push(L.marker([45.38095865989225, -75.7004369622975], {icon: getIcon('parking')}).bindPopup("<b>Parking P1</b>"));
 
@@ -167,7 +259,6 @@ foodList.push(L.marker([45.382162690068874, -75.69590492771918], {icon: getIcon(
 foodList.push(L.marker([45.3842765085715, -75.69845175033419], {icon: getIcon('cafe')}).bindPopup("<b>Chatime</b>"));
 
 foodList.push(L.marker([45.383893101418984, -75.69732530808677], {icon: getIcon('cafe')}).bindPopup("<b>Bridgehead</b>"));
-
 
 
 // --- Adding The Toggle ---

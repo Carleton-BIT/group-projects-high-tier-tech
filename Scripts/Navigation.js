@@ -16,25 +16,61 @@ document.addEventListener("DOMContentLoaded", function() {
     // connected to the tunnel network will be rejected via TUNNEL_SNAP_THRESHOLD.
     // ─────────────────────────────────────────────────────────────────────────
     var locationCoords = {
-        // Buildings
-        "UC":               [45.3831,             -75.6976            ],
-        "Steacie":          [45.38281441419413,   -75.69688916910961  ],
-        "Health Science":   [45.38324661752201,   -75.69656801381647  ],
-        "Herzberg":         [45.38212041306241,   -75.69763612887995  ],
-        "Richcraft":        [45.38240733558676,   -75.69614797664528  ],
-        "Paterson":         [45.38190502158383,   -75.69863106789164  ],
-        "Southam":          [45.381250731224846,  -75.69961203445604  ],
-        "Mackenzie":        [45.384642722316215,  -75.6982928326831   ],
-        "Minto":            [45.38519202993685,   -75.69697466818896  ],
-        "Field House":      [45.38690570693125,   -75.69452948807854  ],
-        "Alumni":           [45.38656776841287,   -75.69332757666885  ],
-        "Nicol":            [45.384337212370724,  -75.696782259743    ],
-        "Tory":             [45.38413733826662,   -75.69852807495623  ],
-        "Azireli Pavilion": [45.38288725287422,   -75.69901031383795  ],
-        "Azireli Theatre":  [45.383349293253715,  -75.69879344442803  ],
-        "MacOdrum":         [45.381967540245654,  -75.69971313252802  ],
-        "Ice House":        [45.385820482019405,  -75.6926284170632   ],
-        "Architecture":     [45.38401319521936,   -75.69747845760243  ],
+        // Core Buildings
+        "UC":                           [45.3831,             -75.6976            ],
+        "Steacie":                      [45.38281441419413,   -75.69688916910961  ],
+        "Health Science":               [45.38324661752201,   -75.69656801381647  ],
+        "Herzberg":                     [45.38212041306241,   -75.69763612887995  ],
+        "Richcraft":                    [45.38240733558676,   -75.69614797664528  ],
+        "Paterson":                     [45.38190502158383,   -75.69863106789164  ],
+        "Southam":                      [45.381250731224846,  -75.69961203445604  ],
+        "Mackenzie":                    [45.384642722316215,  -75.6982928326831   ],
+        "Minto":                        [45.38519202993685,   -75.69697466818896  ],
+        "Field House":                  [45.38690570693125,   -75.69452948807854  ],
+        "Alumni":                       [45.38656776841287,   -75.69332757666885  ],
+        "Nicol":                        [45.384337212370724,  -75.696782259743    ],
+        "Tory":                         [45.38413733826662,   -75.69852807495623  ],
+        "Azireli Pavilion":             [45.38288725287422,   -75.69901031383795  ],
+        "Azireli Theatre":              [45.383349293253715,  -75.69879344442803  ],
+        "MacOdrum":                     [45.381967540245654,  -75.69971313252802  ],
+        "Ice House":                    [45.385820482019405,  -75.6926284170632   ],
+        "Architecture":                 [45.38401319521936,   -75.69747845760243  ],
+
+        // Missing Academic/Misc. Buildings
+        "Dunton Tower":                 [45.38267,            -75.6993105         ],
+        "Loeb":                         [45.3809161,          -75.6990911         ],
+        "HCI":                          [45.3806226,          -75.6997666         ],
+        "VSIM":                         [45.3805,             -75.7001            ], // rough co-ordinates, verify after putting into co-ords in Navigation.js and the html file
+        "SSRB":                         [45.3804167,          -75.6999805         ],
+        "ARISE":                        [45.3812685,          -75.6980839         ],
+        "St. Patricks":                 [45.3874575,          -75.698296          ],
+        "Pigiarvik":                    [45.383386,           -75.6943563         ],
+        "Nesbitt":                      [45.3839255,          -75.693274          ],
+        "National Wildlife":            [45.384096,           -75.692662          ],
+        "CTTC":                         [45.3845025,          -75.693652          ],
+        "Maintenance Building":         [45.384479,           -75.694682          ],
+        "Colonel By Childcare":         [45.385488,           -75.694131          ],
+        "Engineering Design Centre":    [45.384900,           -75.698153          ],
+
+        // The remaining athletics buildings
+        "Athletics":                    [45.3862895,          -75.694216          ],
+        "Tennis Centre":                [45.388069,           -75.6949791         ],
+        "Norm Fenn Gym":                [45.385741,           -75.693360          ],
+
+        // All of the residences
+        "Teraanga Commons":             [45.387111,           -75.6971102         ],
+        "Prescott House":               [45.385860,           -75.697485          ],
+        "Frontenac House":              [45.3859707,          -75.698298          ],
+        "Lanark House":                 [45.385746,           -75.6982275         ],
+        "Renfrew House":                [45.386128,           -75.6971775         ],
+        "Lennox and Addington House":   [45.3863945,          -75.697097          ],
+        "Glengarry House":              [45.386695,           -75.6972745         ],
+        "Grenville House":              [45.3865069,          -75.6984915         ],
+        "Russell House":                [45.3869282,          -75.698525          ],
+        "Stormont House":               [45.387678,           -75.6971526         ],
+        "Dundas House":                 [45.387795,           -75.697635          ],
+        "Leeds House":                  [45.3879326,          -75.698571          ],
+        "Rideau House":                 [45.3884999,          -75.6974586         ],
 
         // Transit Stops
         "O-Train":          [45.3855925,           -75.6959248         ],
@@ -101,8 +137,8 @@ document.addEventListener("DOMContentLoaded", function() {
      * Build an undirected weighted adjacency graph from the tunnel GeoJSON.
      * Excludes railway features (Trillium Line) and non-pedestrian ways.
      * Returns { graph, coords } where:
-     *   graph  — { key: [{key, dist}, ...] }
-     *   coords — { key: [lat, lng] }
+     * graph  — { key: [{key, dist}, ...] }
+     * coords — { key: [lat, lng] }
      */
     function buildTunnelGraph(geojson) {
         var graph  = {};
