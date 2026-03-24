@@ -10,21 +10,19 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 
     <link rel="stylesheet" href="CSS/map-style.css">
-
-
 </head>
 
 <body>
 
 <header class="cu-header">
     <div class="header-content">
-        <img src="webpage-assets/carleton-logo-black-bg.png" alt="Carleton University Logo" class="cu-logo">
-        <h1 class="site-title">Carleton Map</h1>
+        <img src="webpage-assets/brand-logo-1200w-1-1024x256.jpg" alt="Carleton University Logo" class="cu-logo">
+        <h1 class="site-title">🗺️ Campus Map</h1>
     </div>
     <nav class="cu-nav">
         <a href="./index.html">Home</a>
         <a class="active" href="./map.html">Map</a>
-        <a href="./aboutus.html">About Us</a>
+        <a href="./aboutus.html">About Our Map</a>
     </nav>
 </header>
 
@@ -36,36 +34,72 @@
     <select id="startSelect" class="map-select">
         <option value="" selected disabled>Start Location...</option>
 
-        <optgroup label="Buildings">
-            <option value="UC">University Centre</option>
-            <option value="Steacie">Steacie Building</option>
-            <option value="Health Science">Health Science Building</option>
-            <option value="Herzberg">Herzberg Laboratory</option>
-            <option value="Richcraft">Richcraft Building</option>
-            <option value="Paterson">Paterson Hall</option>
-            <option value="Southam">Southam Hall</option>
-            <option value="Mackenzie">Mackenzie Building</option>
-            <option value="Minto">Minto Centre</option>
-            <option value="Field House">Field House</option>
-            <option value="Alumni">Alumni Hall</option>
-            <option value="Nicol">Nicol Building</option>
-            <option value="Tory">Canal/Tory Building</option>
+        <optgroup label="Academic & Admin">
+            <option value="Architecture">Architecture Building</option>
+            <option value="ARISE">ARISE Building</option>
             <option value="Azireli Pavilion">Azireli Pavilion</option>
             <option value="Azireli Theatre">Azireli Theatre</option>
+            <option value="Tory">Canal/Tory Building</option>
+            <option value="CTTC">CTTC Building</option>
+            <option value="Dunton Tower">Dunton Tower</option>
+            <option value="Engineering Design Centre">Engineering Design Centre</option>
+            <option value="Health Science">Health Science Building</option>
+            <option value="Herzberg">Herzberg Laboratory</option>
+            <option value="HCI">Human Computer Interaction (HCI)</option>
+            <option value="Loeb">Loeb Building</option>
+            <option value="Mackenzie">Mackenzie Building</option>
             <option value="MacOdrum">MacOdrum Library</option>
+            <option value="Minto">Minto Centre</option>
+            <option value="National Wildlife">National Wildlife Research Centre (NWRC)</option>
+            <option value="Nesbitt">Nesbitt Biology Building</option>
+            <option value="Nicol">Nicol Building</option>
+            <option value="Paterson">Paterson Hall</option>
+            <option value="Pigiarvik">Pigiarvik (Robertson Hall)</option>
+            <option value="Richcraft">Richcraft Building</option>
+            <option value="SSRB">Social Sciences Research Building</option>
+            <option value="Southam">Southam Hall</option>
+            <option value="St. Patricks">St. Patrick's Building</option>
+            <option value="Steacie">Steacie Building</option>
+            <option value="UC">University Centre</option>
+            <option value="VSIM">Visualization and Simulation (VSIM)</option>
+        </optgroup>
+
+        <optgroup label="Residences">
+            <option value="Dundas House">Dundas House</option>
+            <option value="Frontenac House">Frontenac House</option>
+            <option value="Glengarry House">Glengarry House</option>
+            <option value="Grenville House">Grenville House</option>
+            <option value="Lanark House">Lanark House</option>
+            <option value="Leeds House">Leeds House</option>
+            <option value="Lennox and Addington House">Lennox and Addington House</option>
+            <option value="Prescott House">Prescott House</option>
+            <option value="Renfrew House">Renfrew House</option>
+            <option value="Rideau House">Rideau House</option>
+            <option value="Russell House">Russell House</option>
+            <option value="Stormont House">Stormont House</option>
+            <option value="Teraanga Commons">Teraanga Commons</option>
+        </optgroup>
+
+        <optgroup label="Athletics & Services">
+            <option value="Alumni">Alumni Hall</option>
+            <option value="Athletics">Athletics Building</option>
             <option value="Ice House">Carleton Ice House</option>
-            <option value="Architecture">Architecture Building</option>
+            <option value="Colonel By Childcare">Colonel By Child Care Centre</option>
+            <option value="Field House">Field House</option>
+            <option value="Maintenance Building">Maintenance Building</option>
+            <option value="Norm Fenn Gym">Norm Fenn Gym</option>
+            <option value="Tennis Centre">Tennis Centre</option>
         </optgroup>
 
         <optgroup label="Transit">
-            <option value="O-Train">Carleton O-Train Station</option>
-            <option value="Bus 5813">Bus Stop (Carleton U)</option>
             <option value="Bus 6680">Bus Stop (Bronson / Colonel By)</option>
             <option value="Bus 6612">Bus Stop (Campus / Commons)</option>
+            <option value="Bus 5813">Bus Stop (Carleton U)</option>
+            <option value="Bus 4881">Bus Stop (Raven / University)</option>
             <option value="Bus 6790">Bus Stop (University / Bronson)</option>
             <option value="Bus 6610">Bus Stop (University / Gymnasium)</option>
             <option value="Bus 6611">Bus Stop (University / Stadium)</option>
-            <option value="Bus 4881">Bus Stop (Raven / University)</option>
+            <option value="O-Train">Carleton O-Train Station</option>
         </optgroup>
 
         <optgroup label="Parking">
@@ -83,15 +117,15 @@
         </optgroup>
 
         <optgroup label="Food & Drink">
+            <option value="Bridgehead">Bridgehead</option>
+            <option value="Chatime">Chatime</option>
+            <option value="Starbucks-MacOdrum">Starbucks (MacOdrum)</option>
+            <option value="Starbucks-Residence">Starbucks (Residence)</option>
+            <option value="Starbucks-UC">Starbucks (University Centre)</option>
             <option value="T&J">T & J Style Kitchen</option>
             <option value="The Caf">The Caf</option>
-            <option value="Starbucks-MacOdrum">Starbucks (MacOdrum)</option>
-            <option value="Starbucks-UC">Starbucks (University Centre)</option>
-            <option value="Starbucks-Residence">Starbucks (Residence)</option>
-            <option value="TimHortons-UC">Tim Hortons (University Centre)</option>
             <option value="TimHortons-River">Tim Hortons (River)</option>
-            <option value="Chatime">Chatime</option>
-            <option value="Bridgehead">Bridgehead</option>
+            <option value="TimHortons-UC">Tim Hortons (University Centre)</option>
         </optgroup>
     </select>
 
@@ -100,36 +134,72 @@
     <select id="endSelect" class="map-select">
         <option value="" selected disabled>Destination...</option>
 
-        <optgroup label="Buildings">
-            <option value="UC">University Centre</option>
-            <option value="Steacie">Steacie Building</option>
-            <option value="Health Science">Health Science Building</option>
-            <option value="Herzberg">Herzberg Laboratory</option>
-            <option value="Richcraft">Richcraft Building</option>
-            <option value="Paterson">Paterson Hall</option>
-            <option value="Southam">Southam Hall</option>
-            <option value="Mackenzie">Mackenzie Building</option>
-            <option value="Minto">Minto Centre</option>
-            <option value="Field House">Field House</option>
-            <option value="Alumni">Alumni Hall</option>
-            <option value="Nicol">Nicol Building</option>
-            <option value="Tory">Canal/Tory Building</option>
+        <optgroup label="Academic & Admin">
+            <option value="Architecture">Architecture Building</option>
+            <option value="ARISE">ARISE Building</option>
             <option value="Azireli Pavilion">Azireli Pavilion</option>
             <option value="Azireli Theatre">Azireli Theatre</option>
+            <option value="Tory">Canal/Tory Building</option>
+            <option value="CTTC">CTTC Building</option>
+            <option value="Dunton Tower">Dunton Tower</option>
+            <option value="Engineering Design Centre">Engineering Design Centre</option>
+            <option value="Health Science">Health Science Building</option>
+            <option value="Herzberg">Herzberg Laboratory</option>
+            <option value="HCI">Human Computer Interaction (HCI)</option>
+            <option value="Loeb">Loeb Building</option>
+            <option value="Mackenzie">Mackenzie Building</option>
             <option value="MacOdrum">MacOdrum Library</option>
+            <option value="Minto">Minto Centre</option>
+            <option value="National Wildlife">National Wildlife Research Centre (NWRC)</option>
+            <option value="Nesbitt">Nesbitt Biology Building</option>
+            <option value="Nicol">Nicol Building</option>
+            <option value="Paterson">Paterson Hall</option>
+            <option value="Pigiarvik">Pigiarvik (Robertson Hall)</option>
+            <option value="Richcraft">Richcraft Building</option>
+            <option value="SSRB">Social Sciences Research Building</option>
+            <option value="Southam">Southam Hall</option>
+            <option value="St. Patricks">St. Patrick's Building</option>
+            <option value="Steacie">Steacie Building</option>
+            <option value="UC">University Centre</option>
+            <option value="VSIM">Visualization and Simulation (VSIM)</option>
+        </optgroup>
+
+        <optgroup label="Residences">
+            <option value="Dundas House">Dundas House</option>
+            <option value="Frontenac House">Frontenac House</option>
+            <option value="Glengarry House">Glengarry House</option>
+            <option value="Grenville House">Grenville House</option>
+            <option value="Lanark House">Lanark House</option>
+            <option value="Leeds House">Leeds House</option>
+            <option value="Lennox and Addington House">Lennox and Addington House</option>
+            <option value="Prescott House">Prescott House</option>
+            <option value="Renfrew House">Renfrew House</option>
+            <option value="Rideau House">Rideau House</option>
+            <option value="Russell House">Russell House</option>
+            <option value="Stormont House">Stormont House</option>
+            <option value="Teraanga Commons">Teraanga Commons</option>
+        </optgroup>
+
+        <optgroup label="Athletics & Services">
+            <option value="Alumni">Alumni Hall</option>
+            <option value="Athletics">Athletics Building</option>
             <option value="Ice House">Carleton Ice House</option>
-            <option value="Architecture">Architecture Building</option>
+            <option value="Colonel By Childcare">Colonel By Child Care Centre</option>
+            <option value="Field House">Field House</option>
+            <option value="Maintenance Building">Maintenance Building</option>
+            <option value="Norm Fenn Gym">Norm Fenn Gym</option>
+            <option value="Tennis Centre">Tennis Centre</option>
         </optgroup>
 
         <optgroup label="Transit">
-            <option value="O-Train">Carleton O-Train Station</option>
-            <option value="Bus 5813">Bus Stop (Carleton U)</option>
             <option value="Bus 6680">Bus Stop (Bronson / Colonel By)</option>
             <option value="Bus 6612">Bus Stop (Campus / Commons)</option>
+            <option value="Bus 5813">Bus Stop (Carleton U)</option>
+            <option value="Bus 4881">Bus Stop (Raven / University)</option>
             <option value="Bus 6790">Bus Stop (University / Bronson)</option>
             <option value="Bus 6610">Bus Stop (University / Gymnasium)</option>
             <option value="Bus 6611">Bus Stop (University / Stadium)</option>
-            <option value="Bus 4881">Bus Stop (Raven / University)</option>
+            <option value="O-Train">Carleton O-Train Station</option>
         </optgroup>
 
         <optgroup label="Parking">
@@ -147,15 +217,15 @@
         </optgroup>
 
         <optgroup label="Food & Drink">
+            <option value="Bridgehead">Bridgehead</option>
+            <option value="Chatime">Chatime</option>
+            <option value="Starbucks-MacOdrum">Starbucks (MacOdrum)</option>
+            <option value="Starbucks-Residence">Starbucks (Residence)</option>
+            <option value="Starbucks-UC">Starbucks (University Centre)</option>
             <option value="T&J">T & J Style Kitchen</option>
             <option value="The Caf">The Caf</option>
-            <option value="Starbucks-MacOdrum">Starbucks (MacOdrum)</option>
-            <option value="Starbucks-UC">Starbucks (University Centre)</option>
-            <option value="Starbucks-Residence">Starbucks (Residence)</option>
-            <option value="TimHortons-UC">Tim Hortons (University Centre)</option>
             <option value="TimHortons-River">Tim Hortons (River)</option>
-            <option value="Chatime">Chatime</option>
-            <option value="Bridgehead">Bridgehead</option>
+            <option value="TimHortons-UC">Tim Hortons (University Centre)</option>
         </optgroup>
     </select>
 
@@ -164,26 +234,20 @@
     <button id="resetBtn" class="map-btn" style="background: #1a1a1a; color: white;">Reset</button>
 </div>
 
+<div class="map-container">
+    <div id="map"></div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
-
-<div class="map-container">
-    <div id="map">
-        <script src="Scripts/TopMapOverlay.js"></script>
-        <script src="Scripts/Tunnels.js"></script>
-        <script src="Scripts/Navigation.js"></script>
-        <script src="Scripts/BuildingInfo.js"></script>
-        <script src="Scripts/BuildingOverlay.js"></script>
-        <script src="Scripts/LandmarkOverlay.js"></script>
-        <script src="Scripts/BoundaryDim.js"></script>
-    </div>
-</div>
-
+<script src="Scripts/TopMapOverlay.js"></script>
+<script src="Scripts/BuildingInfo.js"></script>
+<script src="Scripts/Tunnels.js"></script>
+<script src="Scripts/Navigation.js"></script>
+<script src="Scripts/BuildingOverlay.js"></script>
+<script src="Scripts/LandmarkOverlay.js"></script>
+<script src="Scripts/BoundaryDim.js"></script>
 </body>
-
-<footer class="cu-footer">
-    <p>&copy; 2026 Carleton University</p>
-</footer>
 </html>
