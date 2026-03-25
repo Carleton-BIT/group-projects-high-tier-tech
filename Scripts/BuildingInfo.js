@@ -112,9 +112,8 @@ var buildingInfo = {
 
     "Nicol Building": {
         abbr:        "NI",
-        description: "Houses computer science programs, labs, and the School of Information Technology.",
-        departments: ["Computer Science", "Information Technology"],
-        features:    ["Computer Labs", "Lecture Halls"],
+        description: "Home of the Sprott School of Business. Houses many enhanced learning, networking, and collaborative spaces.",
+        features:    ["Computer Labs", "Lecture Halls", "Innovation Hub for Student Entrepreneurship"],
         website:     "https://carleton.ca/campus/buildings/nicol-building/"
     },
 
