@@ -12,8 +12,10 @@ Due to immense dissastifaction with the current map at Carleton University we at
 - Users understand the multiple ways to traverse the campus from key locations
 
 # Preview of the Application
-<img width="2752" height="1495" alt="Firefox_Screenshot_2026-03-22T01-42-45 955Z" src="https://github.com/user-attachments/assets/18201157-da9b-43c8-bcdd-de4bc1a20031" />
+<img width="1919" height="909" alt="Street View General Map Overview" src="https://github.com/user-attachments/assets/0d332fe3-2082-4be1-9398-9b013fdbb0ed" />
 
-<img width="2746" height="1495" alt="Firefox_Screenshot_2026-03-22T01-43-43 316Z" src="https://github.com/user-attachments/assets/5b151ffe-e7c8-4eaf-9f77-7d07c626ee6b" />
+<img width="1919" height="906" alt="Satellite View" src="https://github.com/user-attachments/assets/1726fe87-afc7-493b-8d1d-edb5396f1afc" />
 
-<img width="2739" height="1495" alt="Firefox_Screenshot_2026-03-22T01-44-53 998Z" src="https://github.com/user-attachments/assets/36e62695-5e53-422d-a673-770ebf6954e9" />
+<img width="1919" height="910" alt="Navigation System Overview" src="https://github.com/user-attachments/assets/4760a4d6-795b-497f-b0ec-ac117eef10a8" />
+
+<img width="1919" height="896" alt="image" src="https://github.com/user-attachments/assets/6ff1d30a-25a0-4855-a564-270e2040076a" />
