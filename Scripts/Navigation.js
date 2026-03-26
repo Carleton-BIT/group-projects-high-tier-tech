@@ -279,9 +279,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // ─────────────────────────────────────────────────────────────────────────
     var routingControl = L.Routing.control({
         waypoints: [],
-        router: L.Routing.osrmv1({
-            serviceUrl: 'https://router.project-osrm.org/route/v1',
-            profile: 'foot'
+        router: L.Routing.mapbox('pk.eyJ1IjoibGVhZmxldHRlc3R0IiwiYSI6ImNtbjdtdHEyNDAxeHMycG9jeGZyN3kxdDAifQ.nkUsByWqv_3iDOCqyUvbbg', {
+            profile: 'mapbox/driving'
         }),
         routeWhileDragging: false,
         addWaypoints: false,
